@@ -5,10 +5,9 @@ html {
   margin: 0;
   color: #212121;
   font-weight: 300;
-  font-size: 18px;
-  font-family: 'Merriweather', 'Times New Roman', serif;
+  font-size: 12px;
   font-family: 'Rubik', 'Arial', sans-serif;
-  line-height: 1.47;
+  line-height: 1.83;
 }
 
 *, *::before, *::after {
@@ -31,7 +30,7 @@ img {
 /* Typography */
 .heading {
   font-size: 30px;
-  font-family: "Merriweather";
+  font-family: 'Merriweather', 'Times New Roman', serif;
   line-height: 1;
 }
 
@@ -41,8 +40,8 @@ img {
 }
 
 .subheading {
-  font: "Merriweather";
   font-size: 18px;
+  font-family: 'Merriweather', 'Times New Roman', serif;
   line-height: 1;
 }
 
@@ -53,10 +52,8 @@ img {
 
 .paragraph {
   font-size: 12px;
-  font-family: "Rubik";
-
-  /* line-height: 22px; */
-  line-height: 180%;
+  font-family: "Rubik", sans-serif;
+  line-height: 183%;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -71,5 +68,3 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
-
-

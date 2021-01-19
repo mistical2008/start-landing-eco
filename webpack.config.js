@@ -68,6 +68,7 @@ module.exports = {
             options: {
               ident: 'postcss',
               plugins: () => [
+                require('postcss-normalize'),
                 require('postcss-nested'),
                 require('postcss-flexbugs-fixes'),
                 require('postcss-preset-env')({
@@ -76,7 +77,6 @@ module.exports = {
                   },
                   stage: 3,
                 }),
-                require('postcss-normalize')
               ],
               sourceMap: true
             }

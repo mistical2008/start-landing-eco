@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "global.css";
-@import "./sections/hero.css"
-@import "./sections/intro.css"
-@import "./sections/description.css"
+@import "./sections/hero.css";
+@import "./sections/intro.css";
+@import "./sections/description.css";
 
