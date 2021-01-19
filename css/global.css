@@ -28,6 +28,37 @@ img {
   max-width: 800px;
 }
 
+/* Typography */
+.heading {
+  font-size: 30px;
+  font-family: "Merriweather";
+  line-height: 1;
+}
+
+.heading_mobile {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.subheading {
+  font: "Merriweather";
+  font-size: 18px;
+  line-height: 1;
+}
+
+.subheading_mobile {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.paragraph {
+  font-size: 12px;
+  font-family: "Rubik";
+
+  /* line-height: 22px; */
+  line-height: 180%;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
