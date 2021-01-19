@@ -68,6 +68,7 @@ module.exports = {
             options: {
               ident: 'postcss',
               plugins: () => [
+                require('postcss-import'),
                 require('postcss-normalize'),
                 require('postcss-nested'),
                 require('postcss-flexbugs-fixes'),
