@@ -1,0 +1,75 @@
+.hero {
+  position: relative;
+  min-height: 600px;
+  color: #fff;
+  padding-top: 37px;
+  /* background-color: #222F33; */
+}
+
+.hero ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero .caption, 
+.hero .heading,
+.hero .sidestick-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  /* position: relative; */
+  height: 100%;
+}
+
+.hero__header {
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+}
+
+.main-logo {
+  display: block;
+  width: 150px;
+}
+
+.hero__bg-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #222F33;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background-color: #222F33;
+  opacity: 0.4;
+}
+
+.nav__item {
+  font-size: 12px;
+  line-height: 1.25 ;
+}
+
+.socials {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.hamburger-toggler {
+  display: none;
+}
+
