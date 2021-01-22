@@ -4,7 +4,8 @@
     "watch": "npx cross-env NODE_ENV=development npx webpack-dev-server",
     "build": "npx cross-env NODE_ENV=production npx webpack"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
     "html-webpack-plugin": "^4.3.0",
@@ -20,9 +21,7 @@
     "terser-webpack-plugin": "^2.3.6",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
-  },
-  "devDependencies": {
+    "webpack-dev-server": "^3.10.3",
     "cross-env": "^7.0.2",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
