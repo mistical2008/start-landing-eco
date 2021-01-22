@@ -1,0 +1,44 @@
+.intro {
+  padding: 62px 0 57px;
+  color: var(--color-lightgrey);
+  background-color: #fff;
+  background-image: url(../../../../src/img/intro-bit.svg);
+}
+
+.container {
+  position: relative;
+}
+
+.img-slider {
+  position: absolute;
+  top: -101px;
+  right: 0;
+  z-index: 20;
+  width: 325px;
+  height: 366px;
+}
+
+.intro .slider-list {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-item img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.intro .paragraph {
+  width: 400px;
+}
+

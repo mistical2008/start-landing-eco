@@ -1,8 +1,12 @@
 //- - var videoSrc = "../../assets/video.mp4"
-- var videoSrc = "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
-- var videoPosterSrc = "../../img/hero-videoposter.jpg"
+//- - var videoSrc = "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+- var videoSrc = "../assets/main-video.mp4"
+- var videoPosterSrc = "../img/hero-videoposter.jpg"
 
 section.hero
+  video.hero__bg-video(src= videoSrc poster= videoPosterSrc muted loop)
+    source(src= videoSrc, type="video/mp4")
+  div.hero__overlay
   .container
     header.hero__header
       nav.main-nav
@@ -23,13 +27,10 @@ section.hero
           li.nav__item
             a.nav__link(href="#")
               | Nieuws
-        a.button.button_white(href="#")
+        a.button.button_white.caption_medium(href="#")
           | Contact
-    h1.caption Duurzame tiny huisje
-    h2 Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen
-    div.hero__video-wrapper
-      video(src= videoSrc)
-        source(src= videoSrc, type="video/mp4" poster= videoPosterSrc)
+    h1.caption_big Duurzame tiny huisje
+    p.heading.heading_white Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen
     div.sidestick-wrapper
       ul.socials
         li.socials__item
