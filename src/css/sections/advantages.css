@@ -1,0 +1,8 @@
+.advantages {
+    color: var(--color-darkgreen);
+    background-color: var(--color-white);
+}
+
+.advantages-list {
+    list-style: none;
+}
