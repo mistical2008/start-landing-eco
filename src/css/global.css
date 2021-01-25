@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   color: #212121;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   font-family: 'Rubik', 'Arial', sans-serif;
   line-height: 1.83;
@@ -66,19 +66,22 @@ a {
   line-height: 1;
 }
 
-.caption_big {
+.caption {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.25 ;
 }
 
+.caption_big {
+  font-size: 16px;
+}
+
 .caption_medium {
   font-size: 12px;
-  line-height: 1.25 ;
 }
 
 .caption_small {
   font-size: 10px;
-  line-height: 1.25 ;
 }
 
 .paragraph {
@@ -90,7 +93,9 @@ a {
 /* Buttons  */
 .button  {
   height: 34px;
-  padding: 6px;
+  padding: 10px 21px;
+  font-weight: 500;
+  font-size: 12px;
 
   /* line-height: 34px; */
   border-radius: 6px;
