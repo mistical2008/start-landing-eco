@@ -1,3 +1,26 @@
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 50px;
     color: var(--color-white);
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.95;
+
+    & p {
+      margin: 0;
+    }
+}
+
+.footer__right {
+  display: flex;
+
+  & p:last-child {
+    margin-left: 30px;
+  }
+}
+
+.logo-img_white {
+  fill: var(--color-white);
 }
