@@ -91,7 +91,8 @@ a {
 .button  {
   height: 34px;
   padding: 6px;
-  line-height: 34px;
+
+  /* line-height: 34px; */
   border-radius: 6px;
 }
 

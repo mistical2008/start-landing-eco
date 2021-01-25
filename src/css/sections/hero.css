@@ -1,10 +1,12 @@
 .hero {
   position: relative;
   min-height: 600px;
-  padding-top: 37px;
+  padding-top: 35px;
   color: #fff;
 
-  /* background-color: #222F33; */
+  & .caption_big {
+    margin-bottom: 12px;
+  }
 }
 
 .hero ul {
@@ -16,8 +18,7 @@ a {
 }
 
 .hero .caption, 
-.hero .heading,
-.hero .sidestick-wrapper {
+.hero .heading {
   position: relative;
   z-index: 10;
 }
@@ -27,15 +28,56 @@ a {
   height: 100%;
 }
 
+.hero__lid-wrapper {
+  width: 440px;
+}
+
+.sidestick-wrapper {
+  position: absolute;
+  top: 115px;
+  right: -300px;
+  z-index: 10;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+}
+
 .hero__header {
   position: relative;
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
   max-width: 100%;
+  margin-bottom: 115px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 542px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav__item {
+  margin-right: 35px;
+  font-size: 12px;
+  line-height: 1.25 ;
 }
 
 .main-logo {
   display: block;
   width: 150px;
+
+  & img {
+    display: block;
+  }
 }
 
 .hero__bg-video {
@@ -60,14 +102,14 @@ a {
   opacity: 0.4;
 }
 
-.nav__item {
-  font-size: 12px;
-  line-height: 1.25 ;
-}
-
 .socials {
   font-size: 12px;
   line-height: 1;
+}
+
+.socials__item {
+  display: inline-block;
+  margin-right: 40px;
 }
 
 .hamburger-toggler {
