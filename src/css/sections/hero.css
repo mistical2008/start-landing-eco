@@ -12,6 +12,17 @@
   & .heading {
     margin: 0;
   }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    z-index: 13;
+    display: block;
+    width: 62%;
+    height: 37px;
+    background-color: var(--color-white);
+    content: "";
+  }
 }
 
 .hero ul {

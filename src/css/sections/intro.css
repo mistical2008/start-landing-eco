@@ -1,8 +1,20 @@
 .intro {
-  padding: 62px 0 57px;
+  position: relative;
+  padding: 25px 0 57px;
   color: var(--color-lightgrey);
-  background-color: #fff;
-  background-image: url(../../../../src/img/intro-bit.svg);
+  background-color: var(--color-white);
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 13;
+    display: block;
+    width: 38%;
+    height: 34%;
+    background-color: var(--color-darkgreen);
+    content: "";
+  }
 }
 
 .container {
@@ -30,15 +42,46 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: var(--colors-darkgreen);
 }
 
 .slider-item img {
   width: 100%;
   min-height: 100%;
   object-fit: cover;
+  opacity: 0.8;
 }
 
 .intro .paragraph {
   width: 400px;
 }
+
+.slide-controls {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translateX(-50%);
+
+  &__button {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    padding: 0;
+    font-size: 0;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+    opacity: 0.6;
+
+    &_active {
+      opacity: 1;
+    }
+  }
+}
+
 

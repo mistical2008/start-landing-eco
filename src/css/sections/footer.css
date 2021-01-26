@@ -1,7 +1,4 @@
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 33px 50px;
     color: var(--color-white);
     font-weight: 500;
@@ -11,7 +8,14 @@
     & p {
       margin: 0;
     }
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
+
 
 .footer__right {
   display: flex;
