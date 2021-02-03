@@ -13,6 +13,13 @@ const togglePlay = () => {
 
 const updatePlayButton = () => {
   console.log(video.paused)
+  if (video.paused) {
+    buttonPlay.classList.remove("pause")
+    buttonPlay.classList.add("play")
+  } else {
+    buttonPlay.classList.remove("play")
+    buttonPlay.classList.add("pause")
+  }
 }
 
 const fadeOut = (element, direction) => {
@@ -28,13 +35,13 @@ const fadeIn = (element, direction) => {
 const timeoutFadeOut = (elem, index) => {
   setTimeout(() => {
     fadeOut(elem, "top")
-  }, index * 300)
+  }, index * 200)
 }
 
 const timeoutFadeIn = (elem, index) => {
   setTimeout(() => {
     fadeIn(elem, "top")
-  }, index * 300)
+  }, index * 200)
 }
 
 video.addEventListener("play", updatePlayButton)
