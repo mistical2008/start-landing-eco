@@ -4,7 +4,7 @@ const videoOverlay = document.querySelector(".hero__overlay")
 const heroHeader = document.querySelector(".hero__header")
 const heroLid = document.querySelector(".hero__lid-wrapper")
 const sidestick = document.querySelector(".sidestick-wrapper")
-const elems = [buttonPlay, heroHeader, heroLid, sidestick]
+const elems = [buttonPlay, heroLid, sidestick, heroHeader]
 
 const togglePlay = () => {
   const method = video.paused ? "play" : "pause"
