@@ -22,6 +22,11 @@ const updatePlayButton = () => {
   }
 }
 
+const updateOverlay = () => {
+  const method = video.paused ? "add" : "remove"
+  videoOverlay.classList[method]("hero__overlay_dark")
+}
+
 const fadeOut = (element, direction) => {
   // element.classList.add(`fadeout_${direction}`)
   element.classList.add("fadeout", `fadeout_${direction}`)
@@ -45,12 +50,14 @@ const timeoutFadeIn = (elem, index) => {
 }
 
 video.addEventListener("play", updatePlayButton)
+video.addEventListener("play", updateOverlay)
 video.addEventListener("play", (e) => {
   for (let i = 0, len = elems.length; i < len; i++) {
     timeoutFadeOut(elems[i], i)
   }
 })
 video.addEventListener("pause", updatePlayButton)
+video.addEventListener("pause", updateOverlay)
 video.addEventListener("pause", (e) => {
   for (let i = 0, len = elems.length; i < len; i++) {
     timeoutFadeIn(elems[i], i)
