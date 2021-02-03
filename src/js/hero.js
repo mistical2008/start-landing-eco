@@ -13,13 +13,9 @@ const togglePlay = () => {
 
 const updatePlayButton = () => {
   console.log(video.paused)
-  if (video.paused) {
-    buttonPlay.classList.remove("pause")
-    buttonPlay.classList.add("play")
-  } else {
-    buttonPlay.classList.remove("play")
-    buttonPlay.classList.add("pause")
-  }
+  const classNames = video.paused ? ["pause", "play"] : ["play", "pause"]
+  buttonPlay.classList.remove(classNames[0])
+  buttonPlay.classList.add(classNames[1])
 }
 
 const updateOverlay = () => {
@@ -28,12 +24,10 @@ const updateOverlay = () => {
 }
 
 const fadeOut = (element, direction) => {
-  // element.classList.add(`fadeout_${direction}`)
   element.classList.add("fadeout", `fadeout_${direction}`)
 }
 
 const fadeIn = (element, direction) => {
-  // element.classList.add(`fadeout_${direction}`)
   element.classList.remove("fadeout", `fadeout_${direction}`)
 }
 
