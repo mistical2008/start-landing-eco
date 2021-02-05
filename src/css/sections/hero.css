@@ -3,9 +3,10 @@
   min-height: 600px;
 
   /* padding-top: 35px; */
-  padding-bottom: 233px;
+
+  /* padding-bottom: 233px; */
   overflow: hidden;
-  color: #fff;
+  color: var(--color-white);
 
   & .caption_big {
     margin-bottom: 12px;
@@ -73,7 +74,7 @@ a {
 }
 
 .hero__header {
-  position: relative;
+  position: absolute;
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -152,11 +153,20 @@ a {
 }
 
 .player {
-  position: absolute;
+  position: relative;
   top: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
+  margin-top: -35px;
+
+  &_fullwidth {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100VW;
+    margin-right: -50vw;
+    margin-left: -50vw;
+
+  }
 }
 
 .player__button {
@@ -220,7 +230,8 @@ a {
     right: 26%;
     width: 55px;
     height: 55px;
-    background-size: 150% 150%;
+
+    /* background-size: 150% 150%; */
   }
 
   @media (max-width: 768px) {
@@ -228,7 +239,8 @@ a {
     right: 19%;
     width: 55px;
     height: 55px;
-    background-size: 150% 150%;
+
+    /* background-size: 150% 150%; */
   }
 
   @media (max-width: 698px) {
