@@ -25,6 +25,10 @@ section.hero
               | Nieuws
         a.nav__link.button.button_white(href="#")
           | Contact
+    div.player
+      button.player__button.play Play video
+      video.hero__bg-video(src= videoSrc poster= videoPosterSrc muted loop)
+        source(src= videoSrc, type="video/mp4")
 
     div.hero__lid-wrapper
       h1.caption.caption_big Duurzame tiny huisje
@@ -42,8 +46,4 @@ section.hero
         a.socials__link(href="#")
           | Linkedin
   
-  div.player
-    button.player__button.play Play video
-    video.hero__bg-video(src= videoSrc poster= videoPosterSrc muted loop)
-      source(src= videoSrc, type="video/mp4")
   div.hero__overlay

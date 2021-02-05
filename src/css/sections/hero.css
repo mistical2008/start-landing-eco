@@ -1,7 +1,8 @@
 .hero {
   position: relative;
   min-height: 600px;
-  padding-top: 35px;
+
+  /* padding-top: 35px; */
   padding-bottom: 233px;
   overflow: hidden;
   color: #fff;
@@ -23,6 +24,10 @@
     height: 37px;
     background-color: var(--color-white);
     content: "";
+  }
+
+  @media (max-width: 698px) {
+    min-height: 100%;
   }
 }
 
@@ -58,6 +63,13 @@ a {
   transform: rotate(90deg);
   transform-origin: 0 0;
   transition: transform, opacity 0.3s ease-out;
+
+  @media (max-width: 698px) {
+    position: relative;
+    right: unset;
+    display: none;
+    transform: rotate(0deg);
+  }
 }
 
 .hero__header {
@@ -219,12 +231,9 @@ a {
     background-size: 150% 150%;
   }
 
-  @media (max-width: 665px) {
-    right: 17%;
-  }
-
-  @media (max-width: 480px) {
+  @media (max-width: 698px) {
     right: 50%;
+    transform: translateX(50%);
   }
 
 }
