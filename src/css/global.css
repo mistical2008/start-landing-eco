@@ -34,8 +34,9 @@ a {
 
 .container {
   max-width: 830px;
+  height: 100%;
   margin: 0 auto;
-  padding: 35px 15px 0;
+  padding: 0 15px 0;
 }
 
 /* Typography */

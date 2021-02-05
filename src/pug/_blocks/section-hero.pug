@@ -2,8 +2,8 @@
 - var videoPosterSrc = "../img/hero-videoposter.jpg"
 
 section.hero
-  .container
-    header.hero__header
+  header.hero__header
+    .container
       nav.main-nav
         button.hamburger-toggler
           | Toggle navigation
@@ -25,6 +25,7 @@ section.hero
               | Nieuws
         a.nav__link.button.button_white(href="#")
           | Contact
+  .container
     div.player.player_fullwidth
       button.player__button.play Play video
       video.hero__bg-video(src= videoSrc poster= videoPosterSrc muted loop)

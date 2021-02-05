@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   min-height: 600px;
+  padding-top: 35px;
 
   /* padding-top: 35px; */
 
@@ -46,11 +47,6 @@ a {
   z-index: 10;
 }
 
-.container {
-  /* position: relative; */
-  height: 100%;
-}
-
 .hero__lid-wrapper {
   width: 440px;
   transition: transform, opacity 0.3s ease-out;
@@ -75,17 +71,25 @@ a {
 
 .hero__header {
   position: absolute;
+  right: 0;
+  left: 0;
   z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  margin-bottom: 115px;
+
+  /* display: flex; */
+
+  /* justify-content: space-between; */
+
+  /* max-width: 100%; */
+
+  /* margin-bottom: 115px; */
   transition: transform, opacity 0.3s ease-out;
 }
 
 .main-nav {
   display: flex;
-  justify-content: flex-end;
+
+  /* justify-content: flex-end; */
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -95,7 +99,9 @@ a {
   justify-content: flex-end;
   width: 542px;
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 0;
+  margin-left: auto;
 }
 
 .nav__item {
