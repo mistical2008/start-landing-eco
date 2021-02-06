@@ -54,18 +54,16 @@ a {
 
 .sidestick-wrapper {
   position: absolute;
-  top: 115px;
-  right: -300px;
-  z-index: 10;
-  transform: rotate(90deg);
-  transform-origin: 0 0;
-  transition: transform, opacity 0.3s ease-out;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
 
-  @media (max-width: 698px) {
-    position: relative;
-    right: unset;
-    display: none;
-    transform: rotate(0deg);
+  @media (min-width: 768px) {
+    top: 300px;
+    right: 0;
+    display: block;
+    transform: rotate(90deg);
+    transform-origin: 511px 421px;
   }
 }
 
@@ -74,27 +72,19 @@ a {
   right: 0;
   left: 0;
   z-index: 10;
-
-  /* display: flex; */
-
-  /* justify-content: space-between; */
-
-  /* max-width: 100%; */
-
-  /* margin-bottom: 115px; */
   transition: transform, opacity 0.3s ease-out;
 }
 
 .main-nav {
   display: flex;
-
-  /* justify-content: flex-end; */
   justify-content: space-between;
   width: 100%;
 }
 
 .nav-list {
-  display: flex;
+  display: none;
+
+  /* display: flex; */
   align-items: center;
   justify-content: flex-end;
   width: 542px;
@@ -129,7 +119,7 @@ a {
   background-color: var(--color-darkgreen);
 }
 
-.hero__overlay {
+.player__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -145,6 +135,8 @@ a {
 }
 
 .socials {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   line-height: 1;
 }
@@ -155,7 +147,7 @@ a {
 }
 
 .hamburger-toggler {
-  display: none;
+  /* display: none; */
 }
 
 .player {
@@ -177,16 +169,17 @@ a {
 
 .player__button {
   position: absolute;
-  top: 44%;
-  right: 37%;
+  top: 50%;
+  left: 50%;
   z-index: 10;
-  width: 32px;
-  height: 32px;
+  width: 55px;
+  height: 55px;
   padding: 0;
   font-size: 0;
   background-color: var(--color-white);
   border: none;
   border-radius: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
   transition: 0.35s ease-in box-shadow;
 
@@ -205,18 +198,14 @@ a {
     top: 50%;
     left: 50%;
     display: block;
-    width: 8px;
-    height: 9px;
+    width: 13px;
+    height: 15px;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% 100%;
     transform: translate(-50%, -50%);
     content: "";
 
-    @media (max-width: 885px) {
-      width: 13px;
-      height: 15px;
-    }
   }
 
   &.play::before {
@@ -225,33 +214,6 @@ a {
 
   &.pause::before {
     background-image: url(img/pause.svg);
-  }
-
-  @media (max-width: 1108px) {
-    right: 30%;
-  }
-
-  @media (max-width: 885px) {
-    top: 40%;
-    right: 26%;
-    width: 55px;
-    height: 55px;
-
-    /* background-size: 150% 150%; */
-  }
-
-  @media (max-width: 768px) {
-    top: 46%;
-    right: 19%;
-    width: 55px;
-    height: 55px;
-
-    /* background-size: 150% 150%; */
-  }
-
-  @media (max-width: 698px) {
-    right: 50%;
-    transform: translateX(50%);
   }
 
 }

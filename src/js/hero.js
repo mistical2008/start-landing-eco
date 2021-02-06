@@ -1,6 +1,6 @@
 const video = document.querySelector(".hero__bg-video")
 const buttonPlay = document.querySelector(".player__button")
-const videoOverlay = document.querySelector(".hero__overlay")
+const videoOverlay = document.querySelector(".player__overlay")
 const heroHeader = document.querySelector(".hero__header")
 const heroLid = document.querySelector(".hero__lid-wrapper")
 const sidestick = document.querySelector(".sidestick-wrapper")
@@ -20,7 +20,7 @@ const updatePlayButton = () => {
 
 const updateOverlay = () => {
   const method = video.paused ? "add" : "remove"
-  videoOverlay.classList[method]("hero__overlay_dark")
+  videoOverlay.classList[method]("player__overlay_dark")
 }
 
 const fadeOut = (element, direction) => {

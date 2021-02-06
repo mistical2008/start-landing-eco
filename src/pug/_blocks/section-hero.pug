@@ -28,6 +28,7 @@ section.hero
   .container
     div.player.player_fullwidth
       button.player__button.play Play video
+      div.player__overlay
       video.hero__bg-video(src= videoSrc poster= videoPosterSrc muted loop)
         source(src= videoSrc, type="video/mp4")
 
@@ -47,4 +48,3 @@ section.hero
         a.socials__link(href="#")
           | Linkedin
   
-  div.hero__overlay
