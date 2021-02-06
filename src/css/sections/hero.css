@@ -47,8 +47,9 @@ a {
   z-index: 10;
 }
 
+/* TODO: set top and bottom paddings  */
 .hero__lid-wrapper {
-  width: 440px;
+  /* width: 440px; */
   transition: transform, opacity 0.3s ease-out;
 }
 
@@ -59,11 +60,13 @@ a {
   z-index: 11;
 
   @media (min-width: 768px) {
-    top: 300px;
+    top: 50%;
     right: 0;
+    bottom: unset;
+    left: unset;
     display: block;
     transform: rotate(90deg);
-    transform-origin: 511px 421px;
+    transform-origin: calc(100% - 15px) 0;
   }
 }
 
