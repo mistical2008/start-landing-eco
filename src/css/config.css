@@ -1,0 +1,6 @@
+:root {
+  /* Fluid vars */  
+    --fv-design-min: 320;
+    --fv-design-max: 1280;
+}
+

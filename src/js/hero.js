@@ -43,19 +43,18 @@ const timeoutFadeIn = (elem, index) => {
   }, index * 200)
 }
 
-video.addEventListener("play", updatePlayButton)
-video.addEventListener("play", updateOverlay)
-video.addEventListener("play", (e) => {
-  for (let i = 0, len = elems.length; i < len; i++) {
-    timeoutFadeOut(elems[i], i)
-  }
-})
-video.addEventListener("pause", updatePlayButton)
-video.addEventListener("pause", updateOverlay)
-video.addEventListener("pause", (e) => {
-  for (let i = 0, len = elems.length; i < len; i++) {
-    timeoutFadeIn(elems[i], i)
-  }
-})
+const listenVideo = (eventType, video, timeoutCallback) => {
+  video.addEventListener(eventType, updatePlayButton)
+  video.addEventListener(eventType, updateOverlay)
+  video.addEventListener(eventType, (_e) => {
+    for (let i = 0, len = elems.length; i < len; i++) {
+      timeoutCallback(elems[i], i)
+    }
+  })
+}
+
+listenVideo("play", video, timeoutFadeOut);
+listenVideo("pause", video, timeoutFadeIn);
+
 videoOverlay.addEventListener("click", togglePlay)
 buttonPlay.addEventListener("click", togglePlay)

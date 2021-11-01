@@ -4,6 +4,8 @@
   --color-darkgreen: #222F33;
   --color-lightgrey: #646D70;
   --color-white: #fff;
+  --bees-design-min: 320;
+  --bees-design-max: 1280;
 }
 
 /* GLOBAL TAGS */

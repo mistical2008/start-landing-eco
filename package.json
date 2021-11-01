@@ -4,7 +4,6 @@
     "watch": "npx cross-env NODE_ENV=development npx webpack-dev-server",
     "build": "npx cross-env NODE_ENV=production npx webpack"
   },
-  "dependencies": {},
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",
     "cross-env": "^7.0.2",
@@ -17,6 +16,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss": "^8.2.4",
     "postcss-flexbugs-fixes": "^4.2.0",
+    "postcss-fluidvars": "^1.1.2",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
     "postcss-nested": "^4.2.1",

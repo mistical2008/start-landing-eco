@@ -1,10 +1,18 @@
 .fadeout {
   opacity: 0;
-  transition: transform, opacity 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .fadeout_top {
   transform: translateY(-100px);
+}
+
+.sidestick-wrapper.fadeout_top {
+  transform: rotate(90deg) translateX(-100px);
+}
+
+.player__button.fadeout_top {
+  transform: translate(-50%, -100px);
 }
 
 .fadeout_bottom {

@@ -85,6 +85,7 @@ module.exports = {
                       stage: 3,
                     },
                   ],
+                  ["postcss-fluidvars", {namespace: "bees"}],
                 ],
                 sourceMap: true,
               },

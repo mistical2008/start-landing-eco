@@ -2,46 +2,30 @@
   position: relative;
   min-height: 600px;
   padding-top: 35px;
-
-  /* padding-top: 35px; */
-
-  /* padding-bottom: 233px; */
+  padding-bottom: var(--bees-100-200);
   overflow: hidden;
-  color: var(--color-white);
-
-  & .caption_mt_md {
-    margin-top: 28px;
-  }
-
-  & .caption_big {
-    margin-bottom: 12px;
-  }
-
-  & .heading {
-    margin: 0;
-    margin-bottom: 251px;
-  }
-
-  @media (min-width: 768px) {
-    &::after {
-      position: absolute;
-      bottom: 0;
-      z-index: 13;
-      display: block;
-      width: 62%;
-      height: 37px;
-      background-color: var(--color-white);
-      content: "";
-    }
-  }
+  color: var(--color-white); 
 
 }
+
+.hero .caption_mt_md {
+  margin-top: 28px; 
+
+}
+.hero .caption_big {
+  margin-bottom: 12px; 
+}
+
+.hero .heading {
+  margin: 0;
+}
+
 
 .hero ul {
   list-style: none;
 }
 
-a {
+.hero a {
   text-decoration: none;
 }
 
@@ -53,7 +37,6 @@ a {
 
 /* TODO: set top and bottom paddings  */
 .hero__lid-wrapper {
-  /* width: 440px; */
   transition: transform, opacity 0.3s ease-out;
 }
 
@@ -233,3 +216,17 @@ a {
   }
 
 }
+
+@media (min-width: 768px) {
+  .hero::after {
+    position: absolute;
+    bottom: 0;
+    z-index: 13;
+    display: block;
+    width: 62%;
+    height: 37px;
+    background-color: var(--color-white);
+    content: ""; 
+  }
+}
+
