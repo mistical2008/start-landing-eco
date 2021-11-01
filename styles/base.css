@@ -1,0 +1,5 @@
+@layer base {
+  body {
+    @apply p-20 text-black text-xl bg-red-800 font-bold overflow-x-hidden;
+  }
+}

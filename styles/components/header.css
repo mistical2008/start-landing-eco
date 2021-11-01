@@ -1,0 +1,5 @@
+@layer components {
+  .header {
+    @apply text-red-900 text-8xl font-black;
+  }
+}

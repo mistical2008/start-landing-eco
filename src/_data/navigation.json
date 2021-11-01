@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "text": "Writing",
+      "url": "/writing/",
+      "rel": null
+    },
+    {
+      "text": "Projects",
+      "url": "/projects/",
+      "rel": null
+    },
+    {
+      "text": "RSS",
+      "url": "https://hankchizljaw.com/feed/all.xml",
+      "rel": null
+    },
+    {
+      "text": "Micro Blog",
+      "url": "//microblog.hankchizljaw.com",
+      "rel": "external"
+    },
+    {
+      "text": "Twitter",
+      "url": "//twitter.com/hankchizljaw",
+      "rel": "me"
+    },
+    {
+      "text": "CodePen",
+      "url": "//codepen.io/andybelldesign",
+      "rel": null
+    },
+    {
+      "text": "GitHub",
+      "url": "//github.com/hankchizljaw",
+      "rel": "me"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact",
+      "rel": null
+    }
+  ]
+}
