@@ -1,5 +1,0 @@
-@layer base {
-  body {
-    @apply font-body text-black text-base bg-white overflow-x-hidden;
-  }
-}
