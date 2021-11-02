@@ -1,5 +1,5 @@
 @layer base {
   body {
-    @apply p-20 text-black text-xl bg-red-800 font-bold overflow-x-hidden;
+    @apply font-body text-black text-base bg-white overflow-x-hidden;
   }
 }

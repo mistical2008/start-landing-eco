@@ -1,43 +1,23 @@
 {
   "items": [
     {
-      "text": "Writing",
-      "url": "/writing/",
+      "text": "Modellen",
+      "url": "/modellen/",
       "rel": null
     },
     {
-      "text": "Projects",
-      "url": "/projects/",
+      "text": "Kopen",
+      "url": "/kopen/",
       "rel": null
     },
     {
-      "text": "RSS",
-      "url": "https://hankchizljaw.com/feed/all.xml",
+      "text": "Huren",
+      "url": "/Huren/",
       "rel": null
     },
     {
-      "text": "Micro Blog",
-      "url": "//microblog.hankchizljaw.com",
-      "rel": "external"
-    },
-    {
-      "text": "Twitter",
-      "url": "//twitter.com/hankchizljaw",
-      "rel": "me"
-    },
-    {
-      "text": "CodePen",
-      "url": "//codepen.io/andybelldesign",
-      "rel": null
-    },
-    {
-      "text": "GitHub",
-      "url": "//github.com/hankchizljaw",
-      "rel": "me"
-    },
-    {
-      "text": "Contact",
-      "url": "/contact",
+      "text": "Nieuws",
+      "url": "/nieuws/",
       "rel": null
     }
   ]

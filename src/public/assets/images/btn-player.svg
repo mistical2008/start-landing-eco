@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="95" height="95" fill="none">
+  <g filter="url(#BTN_Play__filter0_d_8043:140)">
+    <path fill="#fff" fill-rule="evenodd" d="M47.452 72.904c15.161 0 27.452-12.29 27.452-27.452C74.904 30.291 62.614 18 47.452 18 32.291 18 20 30.29 20 45.452c0 15.161 12.29 27.452 27.452 27.452z" clip-rule="evenodd"/>
+  </g>
+  <path fill="#222F33" fill-rule="evenodd" stroke="#222F33" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M52.6 46.31l-8.58 6.005v-12.01l8.58 6.005z" clip-rule="evenodd"/>
+  <defs>
+    <filter id="BTN_Play__filter0_d_8043:140" width="94.904" height="94.904" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_8043:140"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_8043:140" result="shape"/>
+    </filter>
+  </defs>
+</svg>

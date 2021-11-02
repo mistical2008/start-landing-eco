@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "text": "Instagram",
+      "url": "",
+      "rel": "external"
+    },
+    {
+      "text": "Facebook",
+      "url": "",
+      "rel": "external" 
+    },
+    {
+      "text": "Linkedin",
+      "url": "",
+      "rel": "external" 
+    }
+  ]
+}
