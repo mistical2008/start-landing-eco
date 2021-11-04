@@ -1,15 +1,14 @@
+{% extends 'layouts/section-container.njk' %}
+
 {% from "partials/components/button.njk" import button %}
 {% from "partials/components/slider.njk" import slider %}
 
-<section>
-  <div class="container mx-auto">
-    <div>
-      <h2>{{materials.heading}}</h2>
-      <p>{{materials.text}}</p>
-      {{ button(text=materials.button, link=true, variant="outline") }}
-    </div>
-
-    {{ slider(images=materials.slider.images) }}
-
+{% block content %}
+  <div>
+    <h2>{{materials.heading}}</h2>
+    <p>{{materials.text}}</p>
+    {{ button(text=materials.button, link=true, variant="outline") }}
   </div>
-</section>
+
+  {{ slider(images=materials.slider.images) }}
+{% endblock %}
