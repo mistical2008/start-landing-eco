@@ -1,9 +1,14 @@
-<footer role="contentinfo" class="[ site-foot ] [ font-sans pad-top-700 pad-bottom-900 ]">
-  <div class="wrapper">
-    {% if site.showThemeCredit %}
-      <p class="[ site-foot__credit ] [ pad-top-900 ]">
-        Made by , <a href="https://github.com/mistical2008" rel="external">Evgeniy Talko</a> — <a href="#main-content">Go back to the top</a>.
-      </p>
-    {% endif %}
+<footer role="contentinfo" class="[ site-foot ]">
+  <div class="container mx-auto">
+    {% include 'partials/components/main-logo.njk'%}
+    <div class="[ links-wrapper ]">
+      <ul class="[ footer-links__list ]">
+        {% for link in footer.links %}
+          <li class="footer-link__item">
+            <a href="{{ link.href }}">{{ link.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </footer>
