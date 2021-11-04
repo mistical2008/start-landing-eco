@@ -1,8 +1,8 @@
 {% macro button(variant="fill", text='', link=false, customClasses='') %}
   {% set tag = "button" %}
-  {% set commonClasses = "bg-white text-sm text-primary inline-block px-6 py-2 rounded transition hover:bg-primary hover:text-current cursor-pointer " %}
+  {% set commonClasses = "bg-white text-sm text-primary inline-block px-6 py-2 rounded transition hover:bg-primary hover:text-white cursor-pointer " %}
   {% set fillClasses = commonClasses + "border-none" %}
-  {% set outlineClasses = commonClasses + "border-2 border-red-500" %}
+  {% set outlineClasses = commonClasses + "border border-primary" %}
 
   {% if link %}
     {% set tag = "a" %}
