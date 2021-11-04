@@ -1,11 +1,15 @@
-<div 
-  class="text-white hover:text-black inline-block transition"
->
-{% if page.url == '/' %}
+{% set classes="text-white inline-block transition" %}
+
+{% if page.url != '/' %}
   {% set linkHref = 'href="/"' | safe %}
+  {% set classes = classes + ' hover:text-black' %}
 {% else %}
   {% set linkHref = '' %}
 {% endif %}
+
+<div 
+  class="{{ classes }}"
+>
 
 <a {{ linkHref }}>
   <svg width="135" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
