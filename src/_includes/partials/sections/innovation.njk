@@ -1,0 +1,8 @@
+{% extends 'layouts/section-container.njk' %}
+
+{% block content %}
+    <h2>{{innovation.heading}}</h2>
+    {% for paragraph in innovation.text %}
+        <p>{{ paragraph }}</p>
+    {% endfor %}
+{% endblock %}
