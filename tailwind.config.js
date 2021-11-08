@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
     mode: 'jit',
     purge: ['./_site/**/*.{html,js,jsx,tsx,svg,md}'],
@@ -18,6 +20,9 @@ module.exports = {
             padding: '2rem',
         },
         extend: {
+            boxShadow: {
+                btn: '0 0 0 6px rgb(101, 110, 113, 1)',
+            },
             colors: {
                 primary: '#222F33',
                 secondary: '#656E71',
