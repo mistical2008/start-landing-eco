@@ -1,5 +1,6 @@
 @layer components {
   .nav--vertical-right {
-    @apply absolute -right-22 top-1/2 pl-2 rotate-90 hidden lg:block;
+    @apply absolute right-0 top-3/4 pl-2 pt-8 origin-top-right rotate-90 translate-y-full hidden lg:block;
+    /* @apply absolute -right-22 top-1/2 pl-2 rotate-90 hidden lg:block; */
   }
 }
