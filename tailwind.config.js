@@ -6,6 +6,13 @@ module.exports = {
         preflight: true,
     },
     theme: {
+        screens: {
+            '2xl': '1440px',
+            xl: '1279px',
+            lg: '1023px',
+            md: '767px',
+            sm: '639px',
+        },
         extend: {
             colors: {
                 primary: '#222F33',

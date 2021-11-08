@@ -1,20 +1,22 @@
 {% from "partials/components/button.njk" import button %}
 
 <a class="sr-only skip-link" href="#main-content">Skip to content</a>
+
 <header role="banner" class="[ site-head ] [ absolute inset-x-0 top-0 text-white pt-8 pb-8 ] ">
+
   <div class="container mx-auto">
+
     <span class="sr-only">{{ site.name }}: {{ pageType }}</span>
-    <div class="[ site-head__inner ] [ flex justify-between items-center ]">
-      {#
-      <a href="/" class="[ site-head__site-name ] [ leading-tight ]"{{ 'aria-current=page' if page.url == '/' | safe }}>
-        <span class="visually-hidden">{{ 'Back to homepage' if page.url != '/' else 'Homepage' }}</span>
-        <svg aria-hidden="true" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M8 1L0 15h4.9568L8 9.67460225 11.0436 15H16z"/></svg>
-      </a> #}
+
+    <div class="[ site-head__inner ] [ relative flex justify-between items-center ]">
+
       {% include "partials/components/main-logo.njk" %}
       {% include "partials/components/nav.njk" %}
+
       <div class="[ button-wrapper ]">
         {{ button(text=header.button, link=true) }}
       </div>
+
     </div>
   </div>
 </header>

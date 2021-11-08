@@ -1,0 +1,9 @@
+@layer components {
+  /* .nav-toggle[aria-expanded="false"] { */
+  /*   @apply hidden; */
+  /* } */
+
+  /* .nav-toggle[aria-expanded="true"] { */
+  /*   @apply block; */
+  /* } */
+}
