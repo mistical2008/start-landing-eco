@@ -1,7 +1,7 @@
-<button class="[ play-btn ] [ text-white group ]">
-  <div class="[ bg-white group-hover:bg-primary w-16 h-16 flex justify-center items-center rounded-full ]">
+<button class="[ play-btn ] [ text-white flex flex-col justify-center items-center ]">
+  <div class="[ bg-white group hover:bg-primary w-16 h-16 flex justify-center items-center rounded-full transition ]">
     <svg width="8" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1.5 2.25v6.5m5-6.5v6.5" stroke="#222F33" stroke-width="3" stroke-linecap="round"/>
+      <path class="stroke-current text-primary group-hover:text-white transition" d="M1.5 2.25v6.5m5-6.5v6.5" stroke-width="3" stroke-linecap="round"/>
     </svg>
   </div>
   {{ playBtn.text }}

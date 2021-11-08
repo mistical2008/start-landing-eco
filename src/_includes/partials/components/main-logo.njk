@@ -1,17 +1,18 @@
-{% set classes="[ main-logo ] absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 text-white inline-block transition" %}
+{% set logoClasses="[ main-logo ] absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 text-white inline-block transition" %}
+{% set linkClasses="[ logo-link ]" %}
 
 {% if page.url != '/' %}
   {% set linkHref = 'href="/"' | safe %}
-  {% set classes = classes + ' hover:text-black' %}
+  {% set logoClasses = logoClasses + ' hover:text-black' %}
 {% else %}
   {% set linkHref = '' %}
 {% endif %}
 
 <div 
-  class="{{ classes }}"
+  class="{{ logoClasses }}"
 >
 
-<a {{ linkHref }}>
+<a class="{{ linkClasses }}" {{ linkHref }}>
   <svg width="135" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path 
       class="fill-current"

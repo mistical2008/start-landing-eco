@@ -1,8 +1,9 @@
 {% set items = socials.items %}
 
 {% if items %}
-  <nav class="nav">
-    <ul class="[ social-links__list ] [ flex items-center space-x-2 md:space-before ]">
+  {# TODO: rewrite with flex for 'social-links__list' and rotate-90 for  #}
+  <nav class="[ nav--vertical-right ]">
+    <ul class="[ social-links__list ] [ flex items-center space-x-6 md:space-before ]">
       {% for item in items %}
         {% set relAttribute = '' %}
 

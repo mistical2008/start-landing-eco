@@ -1,14 +1,14 @@
 {# TODO: mobile nav menu reference: https://codepen.io/Kmil/pen/VxmKpX #}
 
 {% if navigation.items %}
-  <div class="nav-wrapper flex">
-    <button class="[ nav-toggle ] lg:hidden" type="button" aria-label="Menu" aria-expanded="true">
+  <div class="[ nav-wrapper ] [ flex ]">
+    <button class="[ nav-toggle ] [ text-white hover:text-secondary transition lg:hidden ]" type="button" aria-label="Menu" aria-expanded="true">
       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
-        <path fill="#fff" d="M.5 4.5h31v2H.5zm0 7h31v2H.5zm0 7h31v2H.5zm0 7h31v2H.5z"/>
+        <path class="fill-current" d="M.5 4.5h31v2H.5zm0 7h31v2H.5zm0 7h31v2H.5zm0 7h31v2H.5z"/>
       </svg>
     </button>
     <nav class="[ nav ] [ hidden lg:block ]">
-      <ul class="[ nav__list ] [ flex items-center space-x-2 md:space-before ]">
+      <ul class="[ nav__list ] [ flex items-center space-x-10 md:space-before ]">
         {% for item in navigation.items %}
           {% set relAttribute = '' %}
           {% set currentAttribute = '' %}
@@ -21,8 +21,9 @@
             {% set currentAttribute = ' aria-current="page"' %}
           {% endif %}
 
-          <li class="nav__item">
-            <a href="{{ item.url }}"{{ relAttribute | safe }} {{ currentAttribute | safe }}>{{ item.text }}</a>
+          {% set linkClasses = "" %}
+          <li class="[ nav__item ]">
+            <a class="{{linkClasses}}" href="{{ item.url }}"{{ relAttribute | safe }} {{ currentAttribute | safe }}>{{ item.text }}</a>
           </li>
         {% endfor %}
       </ul>

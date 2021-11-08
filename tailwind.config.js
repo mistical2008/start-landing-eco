@@ -13,10 +13,22 @@ module.exports = {
             md: '767px',
             sm: '639px',
         },
+        container: {
+            center: true,
+            padding: '2rem',
+        },
         extend: {
             colors: {
                 primary: '#222F33',
                 secondary: '#656E71',
+            },
+            zIndex: {
+                '-10': '-10',
+            },
+            inset: {
+                '-18': '-4.5rem',
+                '-20': '-5rem',
+                '-22': '-5.5rem',
             },
             fontFamily: {
                 body: [

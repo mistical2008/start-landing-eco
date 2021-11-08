@@ -1,5 +1,9 @@
 @layer base {
   body {
-    @apply font-body text-black text-base bg-white overflow-x-hidden;
+    @apply font-body text-secondary text-base leading-7 bg-white overflow-x-hidden;
+  }
+
+  a:not([class*="logo"]):not([class*="button"]) {
+    @apply text-current after:block after:-bottom-2 after:border after:scale-x-0 hover:after:scale-x-100 after:transition;
   }
 }
