@@ -1,0 +1,8 @@
+@layer components {
+  .heading-lg {
+    @apply text-2xl font-display md:text-3xl lg:text-4xl;
+  }
+  .heading-md {
+    @apply text-lg font-display md:text-xl lg:text-2xl;
+  }
+}

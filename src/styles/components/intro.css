@@ -1,0 +1,5 @@
+@layer components {
+  .intro-content {
+    @apply flex justify-start min-h-full pt-20 pb-10 relative z-10 flex-col sm:flex-row sm:pt-28 sm:pb-14 md:pt-40 md:pb-28 lg:pt-52 lg:pb-40 xl:pt-60 xl:pb-52 2xl:pt-72 2xl:pb-96;
+  }
+}

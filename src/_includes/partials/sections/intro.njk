@@ -1,11 +1,13 @@
-<header class="[ intro ] [ flex relative overflow-hidden bg-primary text-white pt-9 pb-9 min-h-[24rem] lg:min-h-[36rem] ]">
+<header class="[ intro ] [ flex relative overflow-hidden bg-primary text-white pt-9 pb-9 ]">
   {% include "partials/components/background-player.njk" %}
-  <div class="[ container ] [ flex justify-start min-h-full pt-32 pb-20 relative z-10 flex-col sm:flex-row ]">
-    <div class="[ hero-lead ] [ flex flex-col justify-center max-w-[45ch]  space-y-2 mx-auto sm:mr-10 sm:ml-0 ]">
-      <h2 class="[ lead-heading ] [ font-bold opacity-80 ]">{{ intro.heading }}</h2>
-      <p class="[ lead-description ] [ text-3xl font-display ]">{{ intro.description }}</p>
+  <div class="[ container ] ">
+    <div class="[ intro-content ]">
+      <div class="[ hero-lead ] [ flex flex-col justify-center max-w-[45ch] lg:max-w-[55ch] space-y-2 mx-auto sm:mr-10 sm:ml-0 ]">
+        <h2 class="[ lead-heading ] [ font-bold opacity-80 ]">{{ intro.heading }}</h2>
+        <p class="[ lead-description ] [ heading-lg ] ">{{ intro.description }}</p>
+      </div>
+      {% include "partials/components/btn-play.njk" %}
+      {% include "partials/components/sidestick-wrapper.njk" %}
     </div>
-    {% include "partials/components/btn-play.njk" %}
-    {% include "partials/components/sidestick-wrapper.njk" %}
   </div>
 </header>
