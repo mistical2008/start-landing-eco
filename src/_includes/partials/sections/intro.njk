@@ -1,9 +1,9 @@
 <header class="[ intro ] [ flex relative overflow-hidden bg-primary text-white pt-9 pb-9 min-h-[24rem] lg:min-h-[36rem] ]">
   {% include "partials/components/background-player.njk" %}
-  <div class="[ container ] [ flex justify-center min-h-full py-20 relative z-10 ]">
-    <div class="[ hero-lead ] [ flex flex-col justify-center max-w-[35ch] pb-9 mr-10 ]">
-      <h2 class="[ lead-heading ]">{{ intro.heading }}</h2>
-      <p class="[ lead-description ] [ text-2xl font-display leading-relaxed ]">{{ intro.description }}</p>
+  <div class="[ container ] [ flex justify-start min-h-full py-20 relative z-10 ]">
+    <div class="[ hero-lead ] [ flex flex-col justify-center max-w-[45ch] pb-9 mr-10 space-y-2 ]">
+      <h2 class="[ lead-heading ] [ font-bold opacity-80 ]">{{ intro.heading }}</h2>
+      <p class="[ lead-description ] [ text-3xl font-display ]">{{ intro.description }}</p>
     </div>
     {% include "partials/components/btn-play.njk" %}
     {% include "partials/components/sidestick-wrapper.njk" %}
