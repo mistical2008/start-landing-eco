@@ -9,11 +9,11 @@ module.exports = {
     },
     theme: {
         screens: {
-            '2xl': '1440px',
-            xl: '1279px',
-            lg: '1023px',
-            md: '767px',
             sm: '639px',
+            md: '767px',
+            lg: '1023px',
+            xl: '1279px',
+            '2xl': '1440px',
         },
         container: {
             center: true,
