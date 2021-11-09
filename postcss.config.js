@@ -7,6 +7,7 @@ module.exports = (ctx) => {
         // parser: 'postcss-scss',
         plugins: [
             require('tailwindcss'),
+            require('postcss-fluidvars')({ namespace: 'fv' }),
             // require('postcss-import')({
             //     plugins: [
             //         // require('postcss-preset-env'),
@@ -22,7 +23,6 @@ module.exports = (ctx) => {
             //   imagePath: `./${inputDir}/assets/sprites`,
             //   spritePath: `./${outputDir}/assets/images`,
             // }),
-            // require('postcss-fluidvars')({ namespace: 'fv' }),
             // require('postcss-focus'),
 
             // require('postcss-pxtorem')({ replace: false }), // rem as fallback
