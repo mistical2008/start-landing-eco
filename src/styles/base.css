@@ -1,5 +1,7 @@
 @layer base {
   body {
+    --design-min: 639;
+    --design-max: 1440;
     @apply font-body text-secondary text-base leading-7 bg-white overflow-x-hidden;
   }
 
