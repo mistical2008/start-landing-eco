@@ -4,6 +4,6 @@
   }
 
   a:not([class*="logo"]):not([class*="button"]) {
-    @apply text-current after:block after:-bottom-2 after:border after:scale-x-0 hover:after:scale-x-100 after:transition;
+    @apply text-current after:block after:origin-bottom-left after:-bottom-2 after:border after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-200;
   }
 }
