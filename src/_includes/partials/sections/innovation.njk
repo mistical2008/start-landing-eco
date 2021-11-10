@@ -1,8 +1,13 @@
 <section class="bg-primary text-white">
-  <div class="container">
-    <h2 class="[ heading-lg ]">{{innovation.heading}}</h2>
-    {% for paragraph in innovation.text %}
-        <p>{{ paragraph }}</p>
-    {% endfor %}
-  </div>
+    <div class="[ content-wrapper ]">
+
+        <div class="container">
+            <h2 class="[ heading-lg ]">{{innovation.heading}}</h2>
+
+            {% for paragraph in innovation.text %}
+                <p>{{ paragraph }}</p>
+            {% endfor %}
+
+        </div>
+    </div>
 </section>

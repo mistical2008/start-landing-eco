@@ -3,15 +3,15 @@
 
 <section>
   <div class="container">
+    <div class="[ content-wrapper ]">
+      <div>
+        <h2 class="[ heading-lg ] [ text-primary ]">{{materials.heading}}</h2>
+        <p>{{materials.text}}</p>
 
-    <div>
-      <h2 class="[ heading-lg ] [ text-primary ]">{{materials.heading}}</h2>
-      <p>{{materials.text}}</p>
+        {{ button(text=materials.button, link=true, variant="outline") }}
+      </div>
 
-      {{ button(text=materials.button, link=true, variant="outline") }}
+      {{ slider(images=materials.slider.images) }}
     </div>
-
-    {{ slider(images=materials.slider.images) }}
-
   </div>
 </section>
