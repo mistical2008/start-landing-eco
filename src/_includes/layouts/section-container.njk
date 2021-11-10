@@ -1,9 +1,16 @@
-{# FIXME: doesn't overrides parent variable from extended child #}
-{% set customClasses = "" %}
+{% set sectionClasses = sectionClasses | default("") %}
 
-<section class="{{customClasses}}">
-  <div class="container">
-    {% block content %}
-    {% endblock %}
+{% if sectionClasses %}
+  {% set classes = 'class="' + sectionClasses + '"' %}
+{% endif %}
+
+<section {{ classes | safe }}>
+  <div class="[ container ]">
+    <div class="[ content-wrapper ]">
+
+      {% block content %}
+      {% endblock %}
+
+    </div>
   </div>
 </section>

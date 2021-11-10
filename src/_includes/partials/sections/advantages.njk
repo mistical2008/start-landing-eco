@@ -1,19 +1,16 @@
-<section class="{{customClasses}}">
-  <div class="container">
-    <div class="[ content-wrapper ]">
+{% extends "layouts/section-container.njk" %}
 
-      <div class="[ image-wrapper ]">
-        <img src="{{ advantages.cover.src }}" alt="{{ advantages.cover.alt }}">
-      </div>
+{% block content %}
 
-      <div class="[ advantages ]">
-        {% for advantage in advantages.items %}
-          <h3 class="[ heading-md ] [ text-primary ]">{{ advantage.heading }}</h3>
-          <p>{{ advantage.text }}</p>
-        {% endfor %}
-      </div>
-
-    </div>
+  <div class="[ image-wrapper ]">
+    <img src="{{ advantages.cover.src }}" alt="{{ advantages.cover.alt }}">
   </div>
-</section>
 
+  <div class="[ advantages ]">
+    {% for advantage in advantages.items %}
+      <h3 class="[ heading-md ] [ text-primary ]">{{ advantage.heading }}</h3>
+      <p>{{ advantage.text }}</p>
+    {% endfor %}
+  </div>
+
+{% endblock %}
