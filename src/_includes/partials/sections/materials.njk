@@ -1,14 +1,17 @@
-{% extends 'layouts/section-container.njk' %}
-
 {% from "partials/components/button.njk" import button %}
 {% from "partials/components/slider.njk" import slider %}
 
-{% block content %}
-  <div>
-    <h2 class="[ heading-lg ] [ text-primary ]">{{materials.heading}}</h2>
-    <p>{{materials.text}}</p>
-    {{ button(text=materials.button, link=true, variant="outline") }}
-  </div>
+<section>
+  <div class="container">
 
-  {{ slider(images=materials.slider.images) }}
-{% endblock %}
+    <div>
+      <h2 class="[ heading-lg ] [ text-primary ]">{{materials.heading}}</h2>
+      <p>{{materials.text}}</p>
+
+      {{ button(text=materials.button, link=true, variant="outline") }}
+    </div>
+
+    {{ slider(images=materials.slider.images) }}
+
+  </div>
+</section>
