@@ -1,4 +1,6 @@
 {% from "partials/components/button.njk" import button %}
+{% from "partials/components/main-logo.njk" import logo %}
+
 
 <a class="sr-only skip-link" href="#main-content">Skip to content</a>
 
@@ -10,7 +12,10 @@
 
     <div class="[ site-head__inner ] [ relative flex justify-between items-center ]">
 
-      {% include "partials/components/main-logo.njk" %}
+
+      {% set logoWrapperClasses="absolute left-1/2 -translate-x-2/3 sm:-translate-x-1/2 text-white inline-block transition lg:static lg:translate-x-0 " %}
+      {{ logo(logoWrapperClasses) }}
+
       {% include "partials/components/nav.njk" %}
 
       <div class="[ button-wrapper ]">

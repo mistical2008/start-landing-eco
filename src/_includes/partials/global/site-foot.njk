@@ -1,14 +1,25 @@
+{% from "partials/components/main-logo.njk" import logo %}
+
+
 <footer role="contentinfo" class="[ site-foot ] [ bg-primary text-white ]">
   <div class="container">
-    {% include 'partials/components/main-logo.njk'%}
-    <div class="[ links-wrapper ]">
-      <ul class="[ footer-links__list ]">
-        {% for link in footer.links %}
-          <li class="footer-link__item">
-            <a href="{{ link.href }}">{{ link.text }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+    <div class="[ content-wrapper ] [ pt-24 relative ]">
+
+      {% set logoWrapperClasses="absolute top-10 left-1/2 -translate-x-1/2 text-white inline-block transition" %}
+      {{ logo(logoWrapperClasses) }}
+
+      <div class="[ links-wrapper ]">
+        <ul class="[ footer-links__list ] [ flex flex-col items-center space-y-2 ]">
+
+          {% for link in footer.links %}
+            <li class="[ footer-link__item ] [ flex-shrink-0 ]">
+              <a href="{{ link.href }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
+
+        </ul>
+      </div>
+
     </div>
   </div>
 </footer>
