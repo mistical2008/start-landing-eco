@@ -1,11 +1,11 @@
 {% set sectionClasses = sectionClasses | default("") %}
-{% set contentWrapperClasses = contentWrapperClasses | default("[ content-wrapper ]") %}
+{% set contentWrapperClasses = contentWrapperClasses | default("") %}
 
 {% if sectionClasses %}
   {% set classes = 'class="' + sectionClasses + '"' %}
 {% endif %}
 
-{% set contentWrapperClasses = 'class="' + contentWrapperClasses + '"' %}
+{% set contentWrapperClasses = 'class="[ content-wrapper ] ' + contentWrapperClasses + '"' %}
 
 <section {{ classes | safe }}>
   <div class="[ container ]">
