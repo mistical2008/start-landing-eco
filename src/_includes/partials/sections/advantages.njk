@@ -2,14 +2,16 @@
 
 {% block content %}
 
-  <div class="[ image-wrapper ]">
+  <div class="[ image-wrapper ] [ mb-8 ]">
     <img src="{{ advantages.cover.src }}" alt="{{ advantages.cover.alt }}">
   </div>
 
-  <div class="[ advantages ]">
+  <div class="[ advantages ] [ space-y-4 ]">
     {% for advantage in advantages.items %}
+    <div class="[ advantage-item ]">
       <h3 class="[ heading-md ] [ text-primary ]">{{ advantage.heading }}</h3>
       <p>{{ advantage.text }}</p>
+    </div>
     {% endfor %}
   </div>
 
