@@ -5,13 +5,25 @@
 
 {% block content %}
 
+  {{
+    slider(
+      images=materials.slider.images,
+      id="slider-materials",
+      customClasses='[ materials-slider ] [ pb-8 ]'
+    )
+  }}
+
   <div class="[ section-description ] [ section-description--cta ] [ space-y-4 ]">
     <h2 class="[ heading-lg ] [ text-primary ]">{{materials.heading}}</h2>
     <p>{{materials.text}}</p>
 
-    {{ button(text=materials.button, link=true, variant="outline") }}
+    {{
+      button(
+        text=materials.button,
+        link=true,
+        variant="outline"
+      )
+    }}
   </div>
-
-  {{ slider(images=materials.slider.images) }}
 
 {% endblock %}
