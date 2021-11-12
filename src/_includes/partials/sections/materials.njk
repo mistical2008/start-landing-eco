@@ -3,13 +3,16 @@
 {% from "partials/components/button.njk" import button %}
 {% from "partials/components/slider.njk" import slider %}
 
+{% set contentWrapperClasses = "" %}
+
 {% block content %}
 
   {{
     slider(
       images=materials.slider.images,
       id="slider-materials",
-      customClasses='[ materials-slider ] [ pb-8 ]'
+      customClasses='[ materials-slider ] [ pb-8 ]',
+      customImageClasses='[ w-full ]'
     )
   }}
 
