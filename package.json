@@ -37,7 +37,6 @@
     "postcss-will-change": "^4.0.1",
     "postcss-will-change-transition": "^1.2.0",
     "prettier": "^2.4.1",
-    "prettier-plugin-tailwind": "^2.2.12",
     "rollup-plugin-critical": "^1.0.8",
     "rustywind": "^0.12.2",
     "slinkity": "^0.2.1",

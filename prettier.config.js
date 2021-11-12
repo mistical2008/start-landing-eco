@@ -5,7 +5,7 @@ module.exports = {
     bracketSpacing: true,
     overrides: [
         {
-            files: ['*.js', '*.html'],
+            files: ['*.js', '*.html', '*.njk', '*.nj'],
             options: {
                 tabWidth: 4,
                 printWidth: 80,
@@ -19,5 +19,4 @@ module.exports = {
             },
         },
     ],
-    twConfig: './tailwind.config.js',
 };
