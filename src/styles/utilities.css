@@ -1,6 +1,10 @@
 @layer utilities {
   @variants responsive {
-    /* Flex-basis: */
+    /* Flex-basis for direct child nodes: */
+    .child-basis-0 > * {
+      flex-basis: 0;
+    }
+
     .child-basis-full > * {
       flex-basis: 100%;
     }
@@ -41,6 +45,10 @@
       flex-basis: 10%;
     }
 
+    /* Flex-basis for current element */
+    .basis-0 {
+      flex-basis: 0;
+    }
     .basis-full {
       flex-basis: 100%;
     }

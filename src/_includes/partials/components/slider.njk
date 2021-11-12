@@ -1,17 +1,24 @@
-{% macro slider(images='',id='image-slider', customClasses='', customImageClasses='[ slider__image ]', tag='div', label='') %}
+{% macro slider(
+    images='',
+    id='image-slider',
+    containerClasses='',
+    imageWrapperClasses='',
+    imageClasses='',
+    tag='div', label=''
+  )
+%}
+
   {% set tag = 'div' %}
-  {% set embeddedClasses = 'splide' %}
-  {% set classes = customClasses + ' ' +  embeddedClasses %}
 
   {% if images %}
-    <{{tag}} id="{{ id }}" class="{{ classes | trim }}">
+    <{{tag}} id="{{ id }}" class="[ splide ] {{ containerClasses | trim }}">
 
-      <div class="splide__track">
-        <ul class="splide__list">
+      <div class="[ splide__track ]">
+        <ul class="[ splide__list ]">
 
           {% for image in images %}
-            <li class="splide__slide">
-              <img src="{{image}}" class="{{ customImageClasses | safe }}">
+            <li class="[ splide__slide ] {{ imageWrapperClasses }}">
+              <img src="{{image}}" class="[ slider__image ] {{ imageClasses | safe }}">
             </li>
           {% endfor %}
 

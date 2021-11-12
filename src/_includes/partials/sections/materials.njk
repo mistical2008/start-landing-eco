@@ -3,7 +3,7 @@
 {% from "partials/components/button.njk" import button %}
 {% from "partials/components/slider.njk" import slider %}
 
-{% set contentWrapperClasses = "" %}
+{% set contentWrapperClasses = "flex flex-wrap gap-2 relative " %}
 
 {% block content %}
 
@@ -11,12 +11,13 @@
     slider(
       images=materials.slider.images,
       id="slider-materials",
-      customClasses='[ materials-slider ] [ pb-8 ]',
-      customImageClasses='[ w-full ]'
+      containerClasses='[ materials-slider ] [ basis-full flex-grow-1 pb-8 lg:pb-0 lg:absolute lg:right-0 lg:-top-20 ]',
+      imageWrapperClasses='lg:h-96 lg:w-96',
+      imageClasses='[ w-full h-full object-cover object-center ]'
     )
   }}
 
-  <div class="[ section-description ] [ section-description--cta ] [ space-y-4 ]">
+  <div class="[ section-description ] [ section-description--cta ] [ space-y-4 flex-grow-full basis-0 lg:max-w-1/2 min-w-1/2 ] ">
     <h2 class="[ heading-lg ] [ text-primary ]">{{materials.heading}}</h2>
     <p>{{materials.text}}</p>
 

@@ -24,6 +24,11 @@ module.exports = {
             },
         },
         extend: {
+            flexGrow: {
+                full: '999',
+                2: '2',
+                3: '3',
+            },
             boxShadow: {
                 btn: '0 0 0 6px rgb(101, 110, 113, 1)',
             },
@@ -38,6 +43,16 @@ module.exports = {
                 '-18': '-4.5rem',
                 '-20': '-5rem',
                 '-22': '-5.5rem',
+            },
+            minWidth: {
+                '1/4': '25%',
+                '1/2': '50%',
+                '3/4': '75%',
+            },
+            maxWidth: {
+                '1/4': '25%',
+                '1/2': '50%',
+                '3/4': '75%',
             },
             fontFamily: {
                 body: [
