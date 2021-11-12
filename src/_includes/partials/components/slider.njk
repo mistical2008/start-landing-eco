@@ -1,10 +1,10 @@
-{% macro slider(images='', customClasses='', tag='div') %}
-  {% set tag = "div" %}
-  {% set embeddedClasses = "splide" %}
-  {% set classes = embeddedClasses + " " + customClasses %}
+{% macro slider(images='',id='image-slider', customClasses='', tag='div', label='') %}
+  {% set tag = 'div' %}
+  {% set embeddedClasses = 'splide' %}
+  {% set classes = customClasses + ' ' +  embeddedClasses %}
 
   {% if images %}
-    <{{tag}} id="image-slider" class="{{ classes | trim }}">
+    <{{tag}} id="{{ id }}" class="{{ classes | trim }}">
       <div class="splide__track">
         <ul class="splide__list">
 
