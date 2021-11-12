@@ -12,12 +12,16 @@ module.exports = {
             sm: '639px',
             md: '767px',
             lg: '1023px',
-            xl: '1279px',
-            '2xl': '1440px',
+            xl: '1169px',
         },
         container: {
             center: true,
-            padding: '2rem',
+            padding: {
+                DEFAULT: '1rem',
+                md: '2rem',
+                lg: '3rem',
+                xl: '4rem',
+            },
         },
         extend: {
             boxShadow: {
