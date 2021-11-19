@@ -1,6 +1,6 @@
 const video = document.querySelector(".player__video")
 const buttonPlay = document.querySelector(".player__button")
-const videoOverlay = document.querySelector(".hero__overlay")
+const videoOverlay = document.querySelector(".player__overlay")
 const heroHeader = document.querySelector(".hero__header")
 const heroLid = document.querySelector(".hero__lid-wrapper")
 const sidestick = document.querySelector(".sidestick-wrapper")
