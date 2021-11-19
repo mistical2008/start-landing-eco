@@ -1,5 +1,5 @@
 // import { AsYouType } from "libphonenumber-js";
-import { printFormData } from "/scripts/utils";
+import { printFormData } from "/@input/scripts/utils";
 
 function toggleActive(selector, toggleClassName) {
   const el = document.querySelector(`${selector}`);
