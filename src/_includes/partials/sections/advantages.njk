@@ -1,12 +1,17 @@
 {% extends "layouts/section-container.njk" %}
 
+{% set sectionClasses = "[ advantages ]" %}
+{% set contentWrapperClasses = "[ flex flex-wrap justify-between items-start lg:child-basis-1/2 ]" %}
+{% set contentWrapperStyles =  "--items-gap: 40px" %}
+
 {% block content %}
 
-  <div class="[ image-wrapper ] [ mb-8 ]">
-    <img src="{{ advantages.cover.src }}" alt="{{ advantages.cover.alt }}">
+  <div class="[ image-wrapper ] [ mb-8 lg:mb-0 h-auto self-stretch ]">
+    {# <img class="[ w-full ]" src="{{ advantages.cover.src }}" alt="{{ advantages.cover.alt }}"> #}
+    <img class="[ object-cover h-full object-center max-w-auto ]" src="{{ advantages.cover.src }}" alt="{{ advantages.cover.alt }}">
   </div>
 
-  <div class="[ advantages ] [ space-y-4 ]">
+  <div class="[ advantages ] [ flex flex-wrap justify-between space-y-4 sx:child-basis-1/2 ]" style="--items-gap: 10px">
     {% for advantage in advantages.items %}
     <div class="[ advantage-item ]">
       <h3 class="[ heading-md ] [ text-primary ]">{{ advantage.heading }}</h3>

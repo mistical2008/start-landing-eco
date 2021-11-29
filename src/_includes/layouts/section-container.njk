@@ -1,15 +1,20 @@
+{# TODO: refactor to macros #}
 {% set sectionClasses = sectionClasses | default("") %}
 {% set contentWrapperClasses = contentWrapperClasses | default("") %}
+{% set contentWrapperStyles = contentWrapperStyles | default("") %}
 
 {% if sectionClasses %}
   {% set classes = 'class="' + sectionClasses + '"' %}
+{% endif %}
+{% if contentWrapperStyles %}
+  {% set styles = 'style="' + contentWrapperStyles + '"' %}
 {% endif %}
 
 {% set contentWrapperClasses = 'class="[ content-wrapper ] ' + contentWrapperClasses + '"' %}
 
 <section {{ classes | safe }}>
   <div class="[ container ]">
-    <div {{ contentWrapperClasses | safe }}>
+    <div {{ contentWrapperClasses | safe }} {{ styles | safe }}>
 
       {% block content %}
       {% endblock %}

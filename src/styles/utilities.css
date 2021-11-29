@@ -10,39 +10,39 @@
     }
 
     .child-basis-1\/2 > * {
-      flex-basis: 50%;
+      flex-basis: calc(50% - var(--items-gap, 0px));
     }
 
     .child-basis-1\/3 > * {
-      flex-basis: 33.333333%;
+      flex-basis: calc(33.333333% - var(--items-gap, 0px));
     }
 
     .child-basis-1\/4 > * {
-      flex-basis: 25%;
+      flex-basis: calc(25% - var(--items-gap, 0px));
     }
 
     .child-basis-1\/5 > * {
-      flex-basis: 20%;
+      flex-basis: calc(20% - var(--items-gap, 0px));
     }
 
     .child-basis-1\/6 > * {
-      flex-basis: 16.666666%;
+      flex-basis: calc(16.666666% - var(--items-gap, 0px));
     }
 
     .child-basis-1\/7 > * {
-      flex-basis: 14.285714%;
+      flex-basis: calc(14.285714% - var(--items-gap, 0px));
     }
 
     .child-basis-1\/8 > * {
-      flex-basis: 12.5%;
+      flex-basis: calc(12.5% - var(--items-gap, 0px));
     }
 
     .child-basis-1\/9 > * {
-      flex-basis: 11.111111111%;
+      flex-basis: calc(11.111111111% - var(--items-gap, 0px));
     }
 
     .child-basis-1\/10 > * {
-      flex-basis: 10%;
+      flex-basis: calc(10% - var(--items-gap, 0px));
     }
 
     /* Flex-basis for current element */
@@ -50,43 +50,43 @@
       flex-basis: 0;
     }
     .basis-full {
-      flex-basis: 100%;
+      flex-basis: calc(100% - var(--items-gap, 0px));
     }
 
     .basis-1\/2 {
-      flex-basis: 50%;
+      flex-basis: calc(50% - var(--items-gap, 0px));
     }
 
     .basis-1\/3 {
-      flex-basis: 33.333333%;
+      flex-basis: calc(33.333333% - var(--items-gap, 0px));
     }
 
     .basis-1\/4 {
-      flex-basis: 25%;
+      flex-basis: calc(25% - var(--items-gap, 0px));
     }
 
     .basis-1\/5 {
-      flex-basis: 20%;
+      flex-basis: calc(20% - var(--items-gap, 0px));
     }
 
     .basis-1\/6 {
-      flex-basis: 16.666666%;
+      flex-basis: calc(16.666666% - var(--items-gap, 0px));
     }
 
     .basis-1\/7 {
-      flex-basis: 14.285714%;
+      flex-basis: calc(14.285714% - var(--items-gap, 0px));
     }
 
     .basis-1\/8 {
-      flex-basis: 12.5%;
+      flex-basis: calc(12.5% - var(--items-gap, 0px));
     }
 
     .basis-1\/9 {
-      flex-basis: 11.111111111%;
+      flex-basis: calc(11.111111111% - var(--items-gap, 0px));
     }
 
     .basis-1\/10 {
-      flex-basis: 10%;
+      flex-basis: calc(10% - var(--items-gap, 0px));
     }
   }
 }
