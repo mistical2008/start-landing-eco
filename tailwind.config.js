@@ -24,6 +24,9 @@ module.exports = {
             },
         },
         extend: {
+            margin: {
+                'auto': 'auto',
+            },
             flexGrow: {
                 full: '999',
                 2: '2',
@@ -85,7 +88,9 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            margin: ['first', 'last', 'odd', 'even'],
+        },
     },
     plugins: [
         require('@tailwindcss/forms'),

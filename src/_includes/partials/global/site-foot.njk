@@ -4,14 +4,19 @@
   <div class="container">
     <div class="[ content-wrapper ] [ pt-24 relative ]">
 
-      {% set logoWrapperClasses="absolute top-10 left-1/2 -translate-x-1/2 text-white inline-block transition" %}
+      {% set logoWrapperClasses="absolute top-10 md:top-1/2 md:translate-y-1/2 left-1/2 -translate-x-1/2 text-white inline-block transition" %}
       {{ logo(logoWrapperClasses) }}
 
       <div class="[ links-wrapper ]">
-        <ul class="[ footer-links__list ] [ flex flex-col items-center space-y-2 ]">
+        <ul
+          class="[ footer-links__list ] [ flex flex-col items-center space-y-2 sm:space-x-10
+          sm:flex-row sm:justify-between md:justify-end sm:items-baseline first:mr-auto ]">
 
-          {% for link in footer.links %}
-            <li class="[ footer-link__item ] [ flex-shrink-0 ]">
+          {% for  link in footer.links %}
+            {% if loop.first %}
+              {% set firstChildClasses = 'md:mr-auto' | default("") %}
+            {% endif %}
+            <li class="{{ '[ footer-link__item ] [ flex-shrink-0 ' + firstChildClasses + ' ]' }}">
               <a href="{{ link.href }}">{{ link.text }}</a>
             </li>
           {% endfor %}
