@@ -1,9 +1,10 @@
 @import 'layouts.css';
+@import 'social-links.css';
 @import 'header.css';
+@import 'main-logo.css';
 @import 'content-wrapper.css';
 @import 'nav.css';
 @import 'intro.css';
 @import 'player-background.css';
-@import 'social-links.css';
 @import 'headings.css';
 @import 'buttons.css';

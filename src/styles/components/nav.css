@@ -6,5 +6,77 @@
   /* .nav-toggle[aria-expanded="true"] { */
   /*   @apply block; */
   /* } */
+  .nav-toggle {
+    @apply text-white hover:text-secondary transition lg:hidden;
+  }
 
+  .nav-wrapper {
+    @apply overflow-auto;
+  }
+
+  .nav--main {
+    @apply hidden lg:block;
+  }
+
+  .social-links--wrapper {
+    @apply hidden text-primary;
+  }
+
+  .site-head {
+    @apply before:block;
+    @apply before:absolute ;
+    @apply before:transition-all before:duration-700 before:origin-top-left;
+    @apply before:bg-white before:w-screen before:h-screen before:scale-0 before:rounded-full;
+  }
+
+  .site-head.burger-opened {
+    @apply pt-0 text-primary inset-0 fixed;
+    @apply before:scale-150;
+    @apply before:rounded-none;
+  }
+
+  .burger-opened .container {
+    /* @apply contents; */
+  }
+
+  .burger-opened .nav-wrapper {
+    /* @apply flex-col text-primary bg-white h-screen w-screen inset-0 fixed; */
+    @apply flex-col h-screen w-full;
+  }
+
+  .burger-opened .nav-toggle {
+    @apply text-primary;
+  }
+
+  .burger-opened .nav--main {
+    @apply block text-primary flex-shrink-0 flex-grow;
+  }
+
+  .burger-opened .nav__list {
+    @apply text-xl flex-col justify-center items-center space-x-0 space-y-4 h-full;
+  }
+
+  .burger-opened .site-head__inner {
+    @apply flex-col justify-center;
+  }
+
+  .burger-opened .main-logo {
+    @apply absolute left-1/2 -translate-x-1/2 top-6 text-primary translate-y-0;
+  }
+
+  .burger-opened .button-wrapper {
+    @apply absolute m-6 right-0 top-0 ;
+  }
+
+  .burger-opened .button {
+    @apply text-primary border border-primary;
+  }
+
+  .burger-opened .social-links--wrapper {
+    @apply block;
+  }
+
+  .burger-opened .social-links__list {
+    @apply justify-center mb-8;
+  }
 }

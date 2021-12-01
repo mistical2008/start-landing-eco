@@ -57,6 +57,14 @@ module.exports = {
                 '1/2': '50%',
                 '3/4': '75%',
             },
+            width: {
+                '2xl': '200%',
+                '3xl': '300%',
+            },
+            height: {
+                '2xl': '200%',
+                '3xl': '300%',
+            },
             fontFamily: {
                 body: [
                     'Rubik',

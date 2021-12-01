@@ -4,7 +4,7 @@
 
 <a class="sr-only skip-link" href="#main-content">Skip to content</a>
 
-<header role="banner" class="[ site-head ] [ absolute inset-x-0 top-0 text-white pt-8 pb-8 z-20 ] ">
+<header role="banner" class="[ site-head ]">
 
   <div class="container">
 
@@ -12,8 +12,7 @@
 
     <div class="[ site-head__inner ] [ relative flex justify-between items-center ]">
 
-
-      {% set logoWrapperClasses="absolute left-1/2 -translate-x-2/3 sm:-translate-x-1/2 text-white inline-block transition lg:static lg:translate-x-0 " %}
+      {% set logoWrapperClasses="" %}
       {{ logo(logoWrapperClasses) }}
 
       {% include "partials/components/nav.njk" %}

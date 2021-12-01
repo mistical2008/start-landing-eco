@@ -1,6 +1,8 @@
 @layer components {
   .button {
-    @apply hover:shadow-btn;
+    @apply text-sm text-primary hover:text-white;
+    @apply inline-block px-6 py-2;
+    @apply bg-white rounded transition hover:bg-primary cursor-pointer hover:shadow-btn;
   }
 
   .button--round {

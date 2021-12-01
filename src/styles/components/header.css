@@ -2,4 +2,8 @@
   .header {
     @apply text-red-900 text-8xl font-black;
   }
+
+  .site-head {
+    @apply absolute inset-x-0 top-0 text-white pt-8 pb-8 z-20
+  }
 }
