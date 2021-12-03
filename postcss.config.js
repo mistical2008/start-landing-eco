@@ -7,7 +7,6 @@ module.exports = (ctx) => {
         // parser: 'postcss-scss',
         plugins: [
             require('tailwindcss'),
-            require('postcss-fluidvars')({ namespace: 'fv' }),
             // require('postcss-import')({
             //     plugins: [
             //         // require('postcss-preset-env'),
@@ -25,14 +24,15 @@ module.exports = (ctx) => {
             // }),
             // require('postcss-focus'),
 
-            // require('postcss-pxtorem')({ replace: false }), // rem as fallback
+            require('postcss-pxtorem')({ replace: false }), // rem as fallback
             // require('postcss-custom-properties'),
             // require('postcss-color-rgba-fallback'),
             // require('postcss-flexbugs-fixes'),
             // require('postcss-will-change-transition'),
             // require('postcss-will-change'),
             // require('postcss-calc'),
-            // require('postcss-viewport-height-correction'),
+            require('postcss-viewport-height-correction'),
+            require('postcss-fluidvars')({ namespace: 'fv' }),
             require('autoprefixer'),
             require('postcss-browser-reporter'),
         ],

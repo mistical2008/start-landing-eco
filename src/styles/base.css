@@ -1,7 +1,9 @@
 @layer base {
+  :root {
+    --fv-design-min: 639;
+    --fv-design-max: 1280;
+  }
   body {
-    --design-min: 639;
-    --design-max: 1440;
     @apply font-body text-secondary text-base leading-7 bg-white overflow-x-hidden;
   }
 
