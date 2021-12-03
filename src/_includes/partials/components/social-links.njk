@@ -1,4 +1,4 @@
-
+{# TODO: refactor to macro #}
 {% set vertical = socialsVertical | default(true) %}
 {% set items = socials.items %}
 
@@ -9,7 +9,6 @@
 {% block content %}
 
   {% if items %}
-    {# TODO: rewrite with flex for 'social-links__list' and rotate-90 for  #}
       <ul class="[ social-links__list ] [ flex items-center space-x-12 md:space-before ]">
         {% for item in items %}
           {% set relAttribute = '' %}

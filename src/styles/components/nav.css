@@ -1,3 +1,4 @@
+/* TODO: refactor mobile nav opened styles by default. '--opened' modificator only make show/hide action  */
 @layer components {
   /* .nav-toggle[aria-expanded="false"] { */
   /*   @apply hidden; */
