@@ -2,10 +2,12 @@
   .button {
     @apply text-sm text-primary hover:text-white;
     @apply inline-block px-6 py-2;
-    @apply bg-white rounded transition hover:bg-primary cursor-pointer hover:shadow-btn;
+    @apply bg-white transition hover:bg-primary cursor-pointer hover:shadow-btn;
   }
 
+  /* component modificators */
   .button--round {
-    /* @apply ; */
+    @apply rounded;
   }
+
 }

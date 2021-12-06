@@ -1,20 +1,18 @@
-{% macro button(variant="fill", text ='', link=false, rounded=false, customClasses='') %}
-  {% set roundedClass = " button--round" if rounded else "" %}
+{% macro button(variant="fill", text ="", link=false, rounded=true, utilClasses="") %}
+  {% set roundedClass = " [ button--round ]" if rounded else "" %}
 
   {% set tag = "button" %}
-  {% set commonClasses = "[ button" + roundedClass +" ]"  %}
-  {% set fillClasses = commonClasses + "border-none" %}
-  {% set outlineClasses = commonClasses + "border border-primary" %}
+  {% set embeddedClasses = "[ button ]" + roundedClass %}
 
   {% if link %}
     {% set tag = "a" %}
   {% endif %}
 
   {% if variant == "fill" %}
-    {% set embeddedClasses = fillClasses %}
+    {% set utilClasses = utilClasses + "border-none" %}
   {% elif variant == "outline" %}
-    {% set embeddedClasses = outlineClasses %}
+    {% set utilClasses = utilClasses + "border border-primary"  %}
   {% endif %}
 
-  <{{tag}} class="{{ embeddedClasses }} {{customClasses}}">{{text}}</{{tag}}>
+  <{{tag}} class="{{ embeddedClasses }} [ {{utilClasses}} ]">{{text}}</{{tag}}>
 {% endmacro %}
