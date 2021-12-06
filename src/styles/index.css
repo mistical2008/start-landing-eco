@@ -1,4 +1,4 @@
-@import "tailwind";
+@import "tailwind"; /* Import tailwind stuff */
 @import "base";
 @import "components";
 @import "utilities";

@@ -1,8 +1,10 @@
 @layer base {
   :root {
-    --fv-design-min: 639;
-    --fv-design-max: 1280;
+    /*  TODO: make this settings coming from tailwind without 'px' suffix */
+    --fv-design-min: 480;
+    --fv-design-max: 1169;
   }
+
   body {
     @apply font-body text-secondary text-base leading-7 bg-white overflow-x-hidden;
   }
