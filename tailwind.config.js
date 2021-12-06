@@ -60,10 +60,20 @@ module.exports = {
             width: {
                 '2xl': '200%',
                 '3xl': '300%',
+                '1vmax': '148vmax',
+                '2vmax': '248vmax',
             },
             height: {
                 '2xl': '200%',
                 '3xl': '300%',
+                '2vmax': '248vmax',
+            },
+            scale: {
+                '2': '2',
+            },
+            inset: {
+                '148mvax': '148vmax',
+                '-148mvax': '-148vmax',
             },
             fontFamily: {
                 body: [
