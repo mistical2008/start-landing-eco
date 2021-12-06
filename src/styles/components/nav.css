@@ -1,12 +1,5 @@
 /* TODO: refactor mobile nav opened styles by default. '--opened' modificator only make show/hide action  */
 @layer components {
-  /* .nav-toggle[aria-expanded="false"] { */
-  /*   @apply hidden; */
-  /* } */
-
-  /* .nav-toggle[aria-expanded="true"] { */
-  /*   @apply block; */
-  /* } */
   .nav-toggle {
     @apply text-white hover:text-secondary transition lg:hidden;
   }
@@ -25,15 +18,16 @@
 
   .site-head {
     @apply before:block;
-    @apply before:absolute ;
-    @apply before:transition-all before:duration-700 before:origin-top-left;
-    @apply before:bg-white before:w-screen before:h-screen before:scale-0 before:rounded-full;
+    @apply before:absolute;
+    @apply before:transition-all before:duration-1000 before:origin-center;
+    @apply before:bg-white before:rounded-full;
+    @apply before:w-2vmax before:h-2vmax before:scale-0 before:-top-148mvax before:-left-148mvax;
   }
 
   .site-head.burger-opened {
-    @apply pt-0 text-primary inset-0 fixed;
+    @apply text-primary;
+    @apply inset-0 fixed;
     @apply before:scale-150;
-    @apply before:rounded-none;
   }
 
   .burger-opened .container {
@@ -41,32 +35,37 @@
   }
 
   .burger-opened .nav-wrapper {
-    /* @apply flex-col text-primary bg-white h-screen w-screen inset-0 fixed; */
-    @apply flex-col h-screen w-full;
+    /* @apply flex-col h-screen w-full; */
   }
 
   .burger-opened .nav-toggle {
     @apply text-primary;
+    /* @apply absolute top-0 left-0; */
+    /* @apply m-6; */
   }
 
   .burger-opened .nav--main {
-    @apply block text-primary flex-shrink-0 flex-grow;
+    @apply text-primary;
+    @apply block;
+    /* @apply flex-shrink-0 flex-grow; */
   }
 
   .burger-opened .nav__list {
-    @apply text-xl flex-col justify-center items-center space-x-0 space-y-4 h-full;
+    @apply text-xl;
+    /* @apply flex-col justify-center items-center space-x-0 space-y-4 h-full; */
   }
 
   .burger-opened .site-head__inner {
-    @apply flex-col justify-center;
+    /* @apply flex-col justify-center; */
   }
 
   .burger-opened .main-logo {
-    @apply absolute left-1/2 -translate-x-1/2 top-6 text-primary translate-y-0;
+    @apply text-primary;
+    /* @apply absolute left-1/2 -translate-x-1/2 top-6 translate-y-0; */
   }
 
   .burger-opened .button-wrapper {
-    @apply absolute m-6 right-0 top-0 ;
+    /* @apply absolute m-6 right-0 top-0 ; */
   }
 
   .burger-opened .button {
@@ -78,6 +77,6 @@
   }
 
   .burger-opened .social-links__list {
-    @apply justify-center mb-8;
+    /* @apply justify-center mb-8; */
   }
 }
