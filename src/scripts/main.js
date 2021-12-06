@@ -1,15 +1,16 @@
-import { toggleActive } from './handlers';
 import { fixViewportHeight } from './utils';
 import { devLogEntryLoaded } from './utils/debug';
 
 devLogEntryLoaded();
 
-const navSelector = 'menu__nav-wrapper';
-const navSelectorActive = 'menu__nav-wrapper_active';
-const navBtnSelector = 'js-nav-menu-icon';
+const siteHead = document.querySelector('.site-head');
+const navToggle = document.querySelector('.nav-toggle');
+const burgerOpened = 'burger-opened';
 
-function toggleNavMenu(navSelector, navSelectorActive) {
-    toggleActive(navSelector, navSelectorActive);
+function toggleMainNav (navToggle) {
+    navToggle.addEventListener('click', (_) => {
+        siteHead.classList.toggle(burgerOpened);
+    })
 }
 
 // Main runtime function
@@ -17,12 +18,7 @@ function main() {
     fixViewportHeight();
 
     // >>> Place your code there
-    document.addEventListener('click', (evt) => {
-        if (!(evt.target === document.querySelector(`.${navBtnSelector}`))) {
-            return;
-        }
-        toggleNavMenu(navSelector, navSelectorActive);
-    });
+    toggleMainNav(navToggle);
     // <<< Place your code there
 }
 

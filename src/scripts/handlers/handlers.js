@@ -1,11 +1,6 @@
 // import { AsYouType } from "libphonenumber-js";
 import { printFormData } from "/@input/scripts/utils";
 
-function toggleActive(selector, toggleClassName) {
-  const el = document.querySelector(`${selector}`);
-  el.classList.toggle(toggleClassName);
-}
-
 function showPopupContainer(containerSelector, pageContentSelector) {
   const $popupContainer = document.querySelector(containerSelector);
   document.body.style.overflowY = "hidden";
