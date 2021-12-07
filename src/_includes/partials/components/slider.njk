@@ -3,6 +3,7 @@
     id='image-slider',
     containerClasses='',
     imageWrapperClasses='',
+    sliderWrapperClasses='',
     imageClasses='',
     tag='div', label=''
   )
@@ -13,16 +14,23 @@
   {% if images %}
     <{{tag}} id="{{ id }}" class="[ splide ] {{ containerClasses | trim }}">
 
-      <div class="[ splide__track ]">
-        <ul class="[ splide__list ]">
+      <div class="[ swiper-container ]">
+        <ul class="[ swiper-wrapper ] {{ sliderWrapperClasses }}">
 
           {% for image in images %}
-            <li class="[ splide__slide ] {{ imageWrapperClasses }}">
+            <li class="[ swiper-slide ] {{ imageWrapperClasses }}">
               <img src="{{image}}" class="[ slider__image ] {{ imageClasses | safe }}">
             </li>
           {% endfor %}
 
         </ul>
+
+        <button class="swiper-plugin-navigation-prevEl">
+          PREV
+        </button>
+        <button class="swiper-plugin-navigation-nextEl">
+          NEXT
+        </button>
       </div>
 
     </{{tag}}>

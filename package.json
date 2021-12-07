@@ -46,5 +46,8 @@
     "vite-aliases": "^0.8.7",
     "vite-plugin-compression": "^0.3.5",
     "vite-plugin-fonts": "^0.2.2"
+  },
+  "dependencies": {
+    "tiny-swiper": "^2.1.2"
   }
 }
