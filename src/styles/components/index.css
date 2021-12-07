@@ -1,4 +1,5 @@
 @import 'layouts.css';
+@import 'buttons.css';
 @import 'social-links.css';
 @import 'header.css';
 @import 'main-logo.css';
@@ -7,4 +8,3 @@
 @import 'intro.css';
 @import 'player-background.css';
 @import 'headings.css';
-@import 'buttons.css';

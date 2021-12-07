@@ -2,6 +2,6 @@
   .main-logo {
     @apply text-white ;
     @apply inline-block;
-    @apply absolute left-1/2 -translate-x-2/3 sm:-translate-x-1/2 transition lg:static lg:translate-x-0;
+    @apply absolute left-1/2 -translate-x-2/3 sm:-translate-x-1/2 transition duration-500 lg:static lg:translate-x-0;
   }
 }

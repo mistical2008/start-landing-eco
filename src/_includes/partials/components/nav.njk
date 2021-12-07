@@ -11,10 +11,10 @@
   {% set logoWrapperClasses="" %}
   {{ logo(logoWrapperClasses) }}
 
-  <div class="[ nav-wrapper ] [ flex ]">
+  <div class="[ nav-wrapper ]">
 
-    <nav class="[ nav ] [ nav--main ] [ ] ">
-      <ul class="[ nav__list ] [ flex items-center space-x-10 md:space-before ]">
+    <nav class="[ nav ] [ nav--main ] [ sr-only ] ">
+      <ul class="[ nav__list ] [ lg:space-x-10 md:space-before ]">
         {% for item in navigation.items %}
           {% set relAttribute = '' %}
           {% set currentAttribute = '' %}
