@@ -1,0 +1,39 @@
+{% macro slider(
+    images='',
+    id='image-slider',
+    containerClasses='',
+    imageWrapperClasses='',
+    sliderWrapperClasses='',
+    imageClasses='',
+    tag='div', label=''
+  )
+%}
+
+  {% set tag = 'div' %}
+
+  {% if images %}
+    <{{tag}} id="{{ id }}" class="{{ containerClasses | trim }}">
+
+      <div class="[ swiper-container ]">
+        <ul class="[ swiper-wrapper ] {{ sliderWrapperClasses }}">
+
+          {% for image in images %}
+            <li class="[ swiper-slide ] {{ imageWrapperClasses }}">
+              <img src="{{image}}" class="[ slider__image ] {{ imageClasses | safe }}">
+            </li>
+          {% endfor %}
+
+        </ul>
+
+        <button class="swiper-plugin-navigation-prevEl">
+          PREV
+        </button>
+        <button class="swiper-plugin-navigation-nextEl">
+          NEXT
+        </button>
+      </div>
+
+    </{{tag}}>
+  {% endif %}
+
+{% endmacro %}

@@ -64,6 +64,7 @@ function initSwiper() {
             prevEl: '.swiper-plugin-navigation-prevEl',
             nextEl: '.swiper-plugin-navigation-nextEl',
         },
+        centeredSlides: true,
     });
 }
 
