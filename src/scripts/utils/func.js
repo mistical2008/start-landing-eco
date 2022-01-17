@@ -1,4 +1,10 @@
 /**
+* @description check argument for function type
+*/
+export function isFunction (arg) {
+  return typeof arg === 'function';
+}
+/**
  * @description Return memoized function result or call func.
  * @param {Function}  fn pure function
  */

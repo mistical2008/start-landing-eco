@@ -1,6 +1,7 @@
 import { Swiper } from './handlers/swiper';
 import { fixViewportHeight } from './utils';
 import { devLogEntryLoaded } from './utils/debug';
+import { handleWindowResizeEvents } from './events/resize';
 
 devLogEntryLoaded();
 
@@ -55,7 +56,7 @@ function initMainNavToggler(navToggle) {
 }
 
 function initSwiper() {
-    const swiper = new Swiper('.swiper-container', {
+    window.swiper = new Swiper('.swiper-container', {
         mousewheel: {
             invert: false,
             interval: 400,
@@ -65,6 +66,7 @@ function initSwiper() {
             nextEl: '.swiper-plugin-navigation-nextEl',
         },
         centeredSlides: true,
+        slidesPerView: 1,
     });
 }
 
@@ -76,6 +78,9 @@ function main() {
     initMainNavToggler(navToggle);
     initSwiper();
     // <<< Place your code there
+
+    // handle events
+    handleWindowResizeEvents(window.swiper.updateSize)
 }
 
 document.addEventListener('DOMContentLoaded', function () {
