@@ -12,7 +12,7 @@
   {% set tag = 'div' %}
 
   {% if images %}
-    <{{tag}} id="{{ id }}" class="[ splide ] {{ containerClasses | trim }}">
+    <{{tag}} id="{{ id }}" class="{{ containerClasses | trim }}">
 
       <div class="[ swiper-container ]">
         <ul class="[ swiper-wrapper ] {{ sliderWrapperClasses }}">
@@ -26,10 +26,10 @@
         </ul>
 
         <button class="swiper-plugin-navigation-prevEl">
-          PREV
+          {% include "partials/components/icon-chevron-left.njk" %}
         </button>
         <button class="swiper-plugin-navigation-nextEl">
-          NEXT
+          {% include "partials/components/icon-chevron-right.njk" %}
         </button>
       </div>
 

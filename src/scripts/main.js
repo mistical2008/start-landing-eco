@@ -65,6 +65,10 @@ function initSwiper() {
             prevEl: '.swiper-plugin-navigation-prevEl',
             nextEl: '.swiper-plugin-navigation-nextEl',
         },
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true
+        },
         centeredSlides: true,
         slidesPerView: 1,
     });
