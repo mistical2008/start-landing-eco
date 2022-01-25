@@ -2,7 +2,8 @@
   .button {
     @apply text-sm text-primary hover:text-white;
     @apply inline-block px-6 py-2;
-    @apply bg-white transition hover:bg-primary cursor-pointer hover:shadow-btn;
+    @apply bg-white transition hover:bg-primary cursor-pointer hover:shadow-btn-2 lg:hover:shadow-btn-6;
+    @apply border border-2 !border-solid border-transparent;
   }
 
   /* component modificators */

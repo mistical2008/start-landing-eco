@@ -34,6 +34,9 @@ module.exports = {
             },
             boxShadow: {
                 btn: '0 0 0 6px rgb(101, 110, 113, 1)',
+                "btn-2": '0 0 0 2px rgb(101, 110, 113, 1)',
+                "btn-4": '0 0 0 4px rgb(101, 110, 113, 1)',
+                "btn-6": '0 0 0 6px rgb(101, 110, 113, 1)',
             },
             colors: {
                 primary: '#222F33',

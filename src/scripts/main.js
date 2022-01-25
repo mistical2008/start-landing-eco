@@ -12,46 +12,37 @@ const socialLinksWrapper = document.querySelector('.social-links--wrapper');
 const burgerOpened = 'burger-opened';
 
 function initMainNavToggler(navToggle) {
+    function showMainNav(timing = 500, className = 'sr-only') {
+        setTimeout(() => {
+            navMain.classList.remove(className);
+        }, timing);
+    }
+
+    function showSocials(timing = 500, styles = {opacity: '1', transform: 'translateX(0)'}) {
+        setTimeout(() => {
+            socialLinksWrapper.style.opacity = styles.opacity
+            socialLinksWrapper.style.transform = styles.transform
+        }, timing)
+    }
+
+    function closeMobileMenu() {
+        siteHead.classList.remove(burgerOpened);
+        navMain.classList.add('sr-only');
+        socialLinksWrapper.style.opacity = '0'
+        socialLinksWrapper.style.transform = 'translateX(-10px)'
+    }
+
     navToggle.addEventListener('click', (_) => {
         let menuOpened = siteHead.classList.contains(burgerOpened);
-        socialLinksWrapper.style.display = menuOpened ? 'none' : void 0;
-        socialLinksWrapper.style.opacity = menuOpened ? '0' : '100';
-
-        setTimeout(() => {
-            socialLinksWrapper.style.display = menuOpened ? 'none' : 'block';
-        }, 1000);
 
         if (menuOpened) {
-            siteHead.classList.remove(burgerOpened);
-            navMain.classList.add('sr-only');
-            // navMain.classList.remove('not-sr-only');
-            // socialLinksWrapper.classList.add('opacity-0');
-            // socialLinksWrapper.classList.remove('opacity-100');
-
-            setTimeout(() => {
-                // debugger;
-                // navMain.classList.add('opacity-0');
-                // navMain.classList.remove('opacity-100');
-                // socialLinksWrapper.classList.add('hidden');
-                // socialLinksWrapper.classList.remove('block');
-            }, 500);
-
+            closeMobileMenu();
             return;
         }
 
         siteHead.classList.add(burgerOpened);
-        // navMain.classList.add('opacity-100');
-        // navMain.classList.remove('opacity-0');
-        // socialLinksWrapper.classList.add('block');
-        // socialLinksWrapper.classList.remove('hidden');
-        // socialLinksWrapper.classList.add('opacity-100');
-        // socialLinksWrapper.classList.remove('opacity-0');
-        socialLinksWrapper.style.display = menuOpened ? void 0 : 'block';
-
-        setTimeout(() => {
-            // navMain.classList.add('not-sr-only');
-            navMain.classList.remove('sr-only');
-        }, 500);
+        showMainNav(500);
+        showSocials(800);
     });
 }
 
