@@ -2,13 +2,14 @@
  * @description Parse URL parameters. Returns an object
  * @param {String} url for parsing params
  */
-function getURLParameters(url) {
-  return (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(
-    (a, v) => (
-      (a[v.slice(0, v.indexOf('='))] = v.slice(v.indexOf('=') + 1)), a
-    ),
-    {},
-  );
+function getURLparams(url) {
+    return (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(
+      (a, v) => {
+        const [key, val] = v.split('=');
+        return (a[key] = val), a
+      },
+    {}
+ );
 }
 
 /**
