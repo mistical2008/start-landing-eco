@@ -20,10 +20,11 @@
   }
 
   .nav--main {
+    /* @apply opacity-0 lg:opacity-100; */
     @apply opacity-0 lg:opacity-100;
     @apply mt-auto mb-auto;
     @apply lg:mt-0 lg:mb-0 lg:block;
-    @apply transition-all duration-1000 -translate-y-10;
+    @apply transition-all duration-1000 -translate-y-10 lg:translate-y-0;
   }
 
   .social-links--wrapper {
@@ -33,6 +34,7 @@
     padding-bottom: var(--fv-8-4vh);
   }
 
+  /* FIXME: solve hor paddings */
   .site-head {
     @apply before:block;
     @apply before:absolute;
