@@ -2,18 +2,18 @@
   "items": [
     {
       "text": "Instagram",
-      "url": "",
+      "url": "https://www.instagram.com",
       "rel": "external"
     },
     {
       "text": "Facebook",
-      "url": "",
-      "rel": "external" 
+      "url": "https://www.facebook.com",
+      "rel": "external"
     },
     {
       "text": "Linkedin",
-      "url": "",
-      "rel": "external" 
+      "url": "https://www.linkedin.com",
+      "rel": "external"
     }
   ]
 }
