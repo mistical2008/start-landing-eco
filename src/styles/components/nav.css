@@ -5,16 +5,16 @@
   }
 
   .nav-wrapper {
-    @apply overflow-auto;
+    @apply overflow-hidden;
     @apply w-full;
     @apply flex flex-col justify-end lg:flex-row;
     @apply absolute top-full left-1/2 -translate-x-1/2 lg:static lg:top-0 lg:left-1/2 lg:translate-x-0;
-    height: calc(100vh - 100%);
+    height: calc(100vh - 220%);
   }
 
   .nav-wrapper .nav__list {
-    @apply text-2xl text-center;
-    @apply w-full space-y-4;
+    @apply text-2xl lg:text-base text-center;
+    @apply w-full space-y-4 lg:space-y-0;
     @apply flex flex-col items-center;
     @apply lg:flex-row;
   }
@@ -31,7 +31,7 @@
     @apply text-primary;
     @apply flex justify-center;
     @apply transition duration-300 opacity-0 -translate-x-10;
-    padding-bottom: var(--fv-8-4vh);
+    /* @apply pb-8 lg:pb-0; */
   }
 
   /* FIXME: solve hor paddings */
