@@ -1,9 +1,9 @@
-<button class="[ play-btn ] [ text-white flex flex-col justify-center items-center pt-16 mx-auto lg:scale-75 lg:flex-row ]">
-  <div class="[ button button--round ] [ bg-white group hover:bg-primary w-16 h-16 flex justify-center items-center rounded-full transition ]">
+<div class="[ player__button-wrapper ] [ text-white flex flex-col justify-center items-center pt-16 mx-auto lg:scale-75 lg:flex-row ]">
+  <button class="[ player__button button button--round ] [ bg-white group hover:bg-primary w-16 h-16 flex justify-center items-center rounded-full transition ]">
     <svg class="scale-125 lg:scale-150" width="8" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hidden transition stroke-current group-hover:text-white text-primary" d="M1.5 2.25v6.5m5-6.5v6.5" stroke-width="3" stroke-linecap="round"/>
-      <path class="transition fill-current stroke-current group-hover:text-white text-primary" fill-rule="evenodd" clip-rule="evenodd" d="M7 4.5L2 8V1l5 3.5z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="player-btn-play" class="hidden transition stroke-current group-hover:text-white text-primary" d="M1.5 2.25v6.5m5-6.5v6.5" stroke-width="3" stroke-linecap="round"/>
+      <path id="player-btn-pause" class="transition fill-current stroke-current group-hover:text-white text-primary" fill-rule="evenodd" clip-rule="evenodd" d="M7 4.5L2 8V1l5 3.5z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-  </div>
+  </button>
   <span class="pl-4">{{ playBtn.text }}</span>
-</button>
+</div>

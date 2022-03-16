@@ -18,18 +18,21 @@ function initMainNavToggler(navToggle) {
         }, timing);
     }
 
-    function showSocials(timing = 500, styles = {opacity: '1', transform: 'translateX(0)'}) {
+    function showSocials(
+        timing = 500,
+        styles = { opacity: '1', transform: 'translateX(0)' }
+    ) {
         setTimeout(() => {
-            socialLinksWrapper.style.opacity = styles.opacity
-            socialLinksWrapper.style.transform = styles.transform
-        }, timing)
+            socialLinksWrapper.style.opacity = styles.opacity;
+            socialLinksWrapper.style.transform = styles.transform;
+        }, timing);
     }
 
     function closeMobileMenu() {
         siteHead.classList.remove(burgerOpened);
         navMain.classList.add('sr-only');
-        socialLinksWrapper.style.opacity = '0'
-        socialLinksWrapper.style.transform = 'translateX(-10px)'
+        socialLinksWrapper.style.opacity = '0';
+        socialLinksWrapper.style.transform = 'translateX(-10px)';
     }
 
     navToggle.addEventListener('click', (_) => {
@@ -58,7 +61,7 @@ function initSwiper() {
         },
         keyboard: {
             enabled: true,
-            onlyInViewport: true
+            onlyInViewport: true,
         },
         centeredSlides: true,
         slidesPerView: 1,
@@ -75,10 +78,9 @@ function main() {
     // <<< Place your code there
 
     // handle events
-    handleWindowResizeEvents(window.swiper.updateSize)
+    handleWindowResizeEvents(window.swiper.updateSize);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     main();
 });
-
