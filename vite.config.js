@@ -1,6 +1,4 @@
 import { defineConfig } from 'vite';
-// import critical from 'rollup-plugin-critical';
-// import { ViteAliases } from 'vite-aliases';
 import ViteCompression from 'vite-plugin-compression';
 import Legacy from '@vitejs/plugin-legacy';
 import ViteFonts from 'vite-plugin-fonts';
@@ -20,7 +18,6 @@ export default defineConfig(({ command, mode }) => {
             //     criticalBase: './',
             //     criticalPages: [{ uri: '', template: 'index' }],
             // }),
-            // ViteAliases({ dir: '.' }),
             Legacy(),
             ViteCompression(), // gzip compression
             ViteCompression({ algorithm: 'brotliCompress' }), // brotli compression
