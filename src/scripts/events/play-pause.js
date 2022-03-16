@@ -1,9 +1,7 @@
-import {
-    updatePlayButton,
-    togglePlay,
-    timeoutFadeIn,
-    timeoutFadeOut,
-} from '../handlers/hero-player';
+import { heroPlayer } from '../handlers';
+
+const { updatePlayButton, togglePlay, timeoutFadeIn, timeoutFadeOut } =
+    heroPlayer;
 
 const videoOverlay = document.querySelector('.player__overlay');
 const video = document.querySelector('.player__video');
@@ -19,7 +17,7 @@ const elems = [buttonPlay, heroHeader, heroLid, sidestick];
 
 console.log('player-module');
 video.addEventListener('play', () =>
-    updatePlayButton(video, iconPlay, iconPause)
+    updatePlayButton({ iconPlay, iconPause }, video)
 );
 video.addEventListener('play', (_e) => {
     for (let i = 0, len = elems.length; i < len; i++) {
@@ -27,7 +25,7 @@ video.addEventListener('play', (_e) => {
     }
 });
 video.addEventListener('pause', () =>
-    updatePlayButton(video, iconPlay, iconPause)
+    updatePlayButton({ iconPlay, iconPause }, video)
 );
 video.addEventListener('pause', (_e) => {
     for (let i = 0, len = elems.length; i < len; i++) {

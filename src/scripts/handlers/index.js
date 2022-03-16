@@ -1,4 +1,5 @@
-// TODO: refactor to named reexports
-export * from "./handlers";
-export * from "./hero-player";
-export * from "./swiper";
+import * as handlers from './handlers';
+import * as heroPlayer from './hero-player';
+import * as slider from './swiper';
+
+export { handlers, heroPlayer, slider };

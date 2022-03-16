@@ -4,7 +4,7 @@ export const togglePlay = (video) => {
     console.log('togglePlay runs');
 };
 
-export const updatePlayButton = (video, iconPlay, iconPause) => {
+export const updatePlayButton = ({ iconPlay, iconPause }, video) => {
     console.log({ updatePlayButton: video.paused });
     iconPlay.classList.toggle('hidden');
     iconPause.classList.toggle('hidden');
